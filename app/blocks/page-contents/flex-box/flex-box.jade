@@ -1,0 +1,31 @@
+//- Шаблон
+extends ../../layout-jade/layout
+
+//- Переменные 
+block variables
+	- var title = 'Flex box'
+	- var site = 'site.ru'
+	- var link = 'https://my-site.ru'
+	- var description = 'Описание страницы'
+	- var siteName = 'site name'
+	- var keywords = 'Кючевые слова'
+	- var body = 'is-flex-box'
+
+//- Контент
+block content-page
+	// flex-box-content
+	main(class="flex-box-content", role="main")
+		section.flex-box
+			.container
+				.flex-box__content
+					ul 
+						li display: flex; - уравнивает элементы в один ряд (применяется к контейнеру элементов)
+						li flex: 1; - уставливает размер
+						li order: 2; - устанавливает очередность элементов;
+						li align-items: center; - выранивает элементы по верху/центру/по низу (применяется к контейнеру элементов)
+						li flex-direction: column; - выравнивает элементы по горизионтали/вертикали (применяется к контейнеру)
+						li justify-content: flex-start; - устанавливает элементы слева/справа/по центру (применяется к контейнеру элементов)
+						li flex-basis: 20%; - уставливает ширину элемента
+						li flex-wrap: wrap; - устанавливает будут ли жлементы переносится на новый ряд (применяется к контейнеру элементов)
+	// End flex-box-content
+

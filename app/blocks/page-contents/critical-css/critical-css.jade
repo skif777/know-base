@@ -1,0 +1,25 @@
+//- Шаблон
+extends ../../layout-jade/layout
+
+//- Переменные 
+block variables
+	- var title = 'Критический css'
+	- var site = 'site.ru'
+	- var link = 'https://my-site.ru'
+	- var description = 'Описание страницы'
+	- var siteName = 'site name'
+	- var keywords = 'Кючевые слова'
+	- var body = 'is-critical-css'
+
+//- Контент
+block content-page
+	// critical-css-content
+	main(class="critical-css-content", role="main")
+		section.critical-css
+			.container 
+				.critical-css__content 
+					p сайт для генерация критического css - https://jonassebastianohlsson.com/criticalpathcssgenerator/, https://www.sitelocity.com/critical-path-css-generator
+					p вставить в head
+
+	// End critical-css-content
+

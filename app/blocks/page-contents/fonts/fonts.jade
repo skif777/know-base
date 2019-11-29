@@ -1,0 +1,27 @@
+//- Шаблон
+extends ../../layout-jade/layout
+
+//- Переменные 
+block variables
+	- var title = 'Загрузка веб-шрифтов'
+	- var site = 'site.ru'
+	- var link = 'https://my-site.ru'
+	- var description = 'Описание страницы'
+	- var siteName = 'site name'
+	- var keywords = 'Кючевые слова'
+	- var body = 'is-fonts'
+
+//- Контент
+block content-page
+	// fonts-content
+	main(class="fonts-content", role="main")
+		section.fonts
+			.container 
+				.fonts__content 
+					ol 
+						li ассинхронно загрузить через font face observer
+						li поставить шрифты на предзагрузку в head через теш <link rel="preload"
+						li исключить загрузку шрифтов для повторных поситителей через куки или local storage
+
+	// End fonts-content
+

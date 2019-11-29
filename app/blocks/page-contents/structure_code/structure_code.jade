@@ -1,0 +1,31 @@
+//- Шаблон
+extends ../../layout-jade/layout
+
+//- Переменные 
+block variables
+	- var title = 'Стуктура кода'
+	- var site = 'site.ru'
+	- var link = 'https://my-site.ru'
+	- var description = 'Описание страницы'
+	- var siteName = 'site name'
+	- var keywords = 'Кючевые слова'
+	- var body = 'is-structure-code'
+
+//- Контент
+block content-page
+	// structure-code-content
+	main(class="structure-code-content", role="main")
+		section(class="code")
+			.container
+				ol 
+					li(class="") section(обертка блока)
+					li(class="ml-2") div.container (боковые отступы)
+					li(class="ml-4") section__content (обертка контента)
+				ol
+					li(class="") div.heading (обертка Заголовка и подзаголовка блока)
+				ol
+					li(class="") div.row (обертка рядов)
+					li(class="ml-2") div.col-lg-3 (сетка)
+					li(class="ml-4") div.block (обертка внутр. контента)
+	// End structure-code-content
+

@@ -1,0 +1,36 @@
+//- Шаблон
+extends ../../layout-jade/layout
+
+//- Переменные 
+block variables
+	- var title = 'Github'
+	- var site = 'site.ru'
+	- var link = 'https://my-site.ru'
+	- var description = 'Описание страницы'
+	- var siteName = 'site name'
+	- var keywords = 'Кючевые слова'
+	- var body = 'is-github'
+
+//- Контент
+block content-page
+	// github-content
+	main(class="github-content", role="main")
+		section.github
+			.container 
+				.github__content
+					p Перед использванием установить GIT!
+					h4 Команды git
+					ul
+						li git clone 'ссылка' - скачивает проект
+						li git status  - показывает статус проекта 'открывать ком. строку в папке'
+						li git add 'название файла' - добавляет файл в статус для выгрузки
+						li git commit -m "add название файла" - готовит файл к выгрузке
+						li git push - выгружает на github
+						li git pull - скачивает все файлы 
+						li git add -A - добавляет все файлы
+						li git commit -m "Made some changes" - готовит все файлы к выгрузке
+						li git - показывает все команды
+						li git rm "имя файла" - удаление
+
+	// End github-content
+

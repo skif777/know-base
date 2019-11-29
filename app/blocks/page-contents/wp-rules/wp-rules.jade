@@ -1,0 +1,70 @@
+//- Шаблон
+extends ../../layout-jade/layout
+
+//- Переменные 
+block variables
+	- var title = 'Правила разработки на Wordpress'
+	- var site = 'site.ru'
+	- var link = 'https://my-site.ru'
+	- var description = 'Описание страницы'
+	- var siteName = 'site name'
+	- var keywords = 'Кючевые слова'
+	- var body = 'is-wp-rules'
+
+//- Контент
+block content-page
+	// wp-rules-content
+	main(class="wp-rules-content", role="main")
+		section.wp-rules
+			.container
+				.wp-rules__content 
+					h4 Правила
+					ul 
+						li Не засорять function php, вставлять функции в отдельный файл из папки inc, файл подключать в function.php через require
+						li файл .css если больше 512кб подключать отдельно для каждой страницы, через условия (if else) в function.php
+						li Верстка поиска
+							a(href="https://wp-kama.ru/function/get_search_form") Смотреть
+						li Вывод CSS в тему <?php echo get_stylesheet_directory_uri() ?>
+					h4 Создание страниц
+					ol 
+						li создать страницу в пу и задать slug (запомнить slug)
+						li дублировать файл page.php 
+						li добавить к названия файла slug страницы через тире (page-slugname.php)
+						li создать файл контента в папке template-parts (content-slugname.php)
+						li в файле page-slugname.php подключить файл контента через функцию get_template_part
+					h4 Верстка блога на WP
+					ul 
+						li при использование старт. шаблона undescores, редактировать файл index.php
+						li настраивать контент в template-parts/content.php 
+						li для сайта-блога в ПУ настройках/чтение оставляем "Ваши последние записи"
+						li для других сайтов с блогом в ПУ настройках/чтение ставим статические страницы для главной и для блога
+						li страницу блога в папке теме не создаем! Используем index.php для редактирования
+						li страницу блога создаем только в ПУ для того чтобы был доступ по ссылке
+						li для вывода отдельных категорий блога создаем рубрики и присваем постам (редактировать в archive.php)
+						li для создания нескольких блогов нужно создать собственный шаблон 
+							a(href="https://misha.blog/wordpress/blog-na-otdelnoy-stranitse.html")  подробнее
+					h4 Font Awesome доавление на сайта
+					ul 
+						li Добавить через function.php два фрагмента кода
+							a(href="https://fontawesome.com/how-to-use/customizing-wordpress/snippets/setup-kit") подробнее 
+						li Изменить в 1 фрагменте кода подключение в head ('wp_enqueue_scripts') на footer ('wp_footer')
+						li Изменить во 2 фрагмента кода имя js файла
+							a(href="https://fontawesome.com/kits")  Зарегистрировать и взять имя здесь
+						li добавлять на сайт с помощью классов < i class="fas fa-camera"></i>
+							a(href="https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use")  Подробнее
+					h4 Добавление формы поиска
+					ul 
+						li <?php get_search_form(); ?>
+							a(href="https://wp-kama.ru/function/get_search_form")  Подробнее
+					h4 Регистрация меню
+					ul 
+						li Добавить в fuction.php функцию register_nav_menus() и указать названию меню (можно несколько)
+							a(href="https://wp-kama.ru/function/register_nav_menus")  подробнее
+						li Вывести в теме с помощью функции wp_nav_menu 
+							a(href="https://wp-kama.ru/function/wp_nav_menu")  подробнее
+
+
+
+
+	// End wp-rules-content
+

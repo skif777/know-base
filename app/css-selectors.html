@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<!-- #if expr="$HTTP_COOKIE=/webfont-loaded=true/" -->
+<html lang="ru" class="webfont-loaded"/>
+<!-- #else-->
+<html lang="ru"/>
+<!-- #endif-->
+<head>
+  <!-- META теги-->
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="keywords" content="Кючевые слова"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <!-- Open Graph-->
+  <meta property="og:title" content="css селекторы"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="site.ru"/>
+  <meta property="og:image" content="img/OpenGraph/og-image.jpg"/>
+  <meta property="og:image:secure_url" content="img/OpenGraph/og-image.jpg"/>
+  <meta property="og:description" name="description" content="Описание страницы"/>
+  <meta property="og:site_name" content="site name"/>
+  <meta property="og:locale" content="ru_RU"/>
+  <!-- Заголовок-->
+  <title>css селекторы</title>
+  <!-- Manifest-->
+  <link rel="manifest" href="site.webmanifest"/>
+  <!-- Canonical-->
+  <link rel="canonical" href="https://my-site.ru"/>
+  <!-- Favicon-->
+  <link rel="icon" href="img/Favicon/favicon.ico" type="image/x-icon"/>
+  <link rel="shortcut icon" href="img/Favicon/favicon.ico" type="image/x-icon"/>
+  <link rel="icon" type="image/png" href="img/Favicon/favicon-16x16.png" sizes="16x16"/>
+  <link rel="icon" type="image/png" href="img/Favicon/favicon-32x32.png" sizes="32x32"/>
+  <link rel="icon" type="image/png" href="img/Favicon/favicon-96x96.png" sizes="96x96"/>
+  <link rel="icon" type="image/png" href="img/Favicon/favicon-196x196.png" sizes="96x96"/>
+  <link rel="icon" type="image/png" href="img/Favicon/favicon-228x228.png" sizes="96x96"/>
+  <link rel="apple-touch-icon" sizes="57x57" href="img/Favicon/apple-touch-icon-57x57.png"/>
+  <link rel="apple-touch-icon" sizes="114x114" href="img/Favicon/apple-touch-icon-114x114.png"/>
+  <link rel="apple-touch-icon" sizes="72x72" href="img/Favicon/apple-touch-icon-72x72.png"/>
+  <link rel="apple-touch-icon" sizes="144x144" href="img/Favicon/apple-touch-icon-144x144.png"/>
+  <link rel="apple-touch-icon" sizes="60x60" href="img/Favicon/apple-touch-icon-60x60.png"/>
+  <link rel="apple-touch-icon" sizes="120x120" href="img/Favicon/apple-touch-icon-120x120.png"/>
+  <link rel="apple-touch-icon" sizes="76x76" href="img/Favicon/apple-touch-icon-76x76.png"/>
+  <link rel="apple-touch-icon" sizes="152x152" href="img/Favicon/apple-touch-icon-152x152.png"/>
+  <meta name="msapplication-TileColor" content="#2b5797"/>
+  <meta name="msapplication-TileImage" content="img/Favicon/tile144x144.png"/>
+  <!-- chrome, firefox OS and opera-->
+  <meta name="theme-color" content="#000"/>
+  <!-- windows phone-->
+  <meta name="msapplication-navbutton-color" content="#000"/>
+  <!-- ios safari-->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000"/>
+  <!-- Preloading images-->
+  <link rel="preload" as="image" href="img/logo.jpg"/>
+  <!-- Preloading fonts-->
+  <link rel="preload" href="#" as="font" type="font/woff2" crossorigin="crossorigin"/>
+  <!-- Preload Styles-->
+  <style>body{opacity:0;overflow-x:hidden;} html{background-color: #000;}</style>
+  <link href="css/style.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+  <script>!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);</script>
+</head>
+<body class="is-css-selectors">
+  <!-- [if lte IE 9]
+  <p class="browserupgrade", role="alert">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="https://browsehappy.com/">обновите бразуер</a> для корректного отображения сайта.</p>
+  <![endif]
+  -->
+  <!-- Кнопка на вверх -->
+  <div id="up-button">Наверх</div>
+  <!-- End Кнопка на вверх-->
+  <!-- Header-->
+  <header class="site-header">
+    <div class="top-line">
+      <div class="container">
+        <div class="top-line__content">
+          <!-- Logo-->
+          <div role="banner" class="top-line__logo"><a href="/index.html" title="logo" class="h1">База знаний</a></div>
+          <!--  End logo-->
+        </div>
+      </div>
+    </div>
+    <h2 class="h2">css селекторы</h2>
+  </header>
+  <!-- End header-->
+  <!-- css-selectors-content-->
+  <main role="main" class="css-selectors-content">
+    <section class="css-selectors"> 
+      <div class="container"> 
+        <div class="css-selectors__content">
+            <table id="extab">
+                <tbody><tr style="background-color: rgb(234, 238, 229);">
+                <th>Селектор</th>
+                <th>Пример</th>
+                <th>Описание</th>
+                <th>Статус
+                </th></tr>
+                <tr>
+                <td><b><a href="http://www.wisdomweb.ru/editor/wweditor.php?fname=css_sel2" target="_blank">#идентификатор</a></b></td>
+                <td>#el1</td>
+                <td>Выберет все элементы на странице, которые имеют идентификатор el1 (которые имеют атрибут id='el1').</td>
+                <td>-</td>
+                </tr>
+                <tr style="background-color: rgb(234, 238, 229);">
+                <td><b><a href="http://www.wisdomweb.ru/editor/wweditor.php?fname=css_sel1" target="_blank">.класс</a></b></td>
+                <td>.group1</td>
+                <td>Выберет группу элементов на странице, которые имеют класс group1 (которые имеют атрибут class='group1').</td>
+                <td>-</td>
+                </tr>
+                <tr>
+                <td><b><a href="http://www.wisdomweb.ru/editor/wweditor.php?fname=css_sel4" target="_blank">элемент</a></b></td>
+                <td>p</td>
+                <td>Выберет все абзацы на странице.</td>
+                <td>-</td>
+                </tr>
+                <tr style="background-color: rgb(234, 238, 229);">
+                <td><b><a href="http://www.wisdomweb.ru/editor/wweditor.php?fname=cssd_aster" target="_blank">*</a></b></td>
+                <td>*</td>
+                <td>Выберет все элементы на странице.</td>
+                <td>-</td>
+                </tr>
+                <tr>
+                <td><b>:not(x)</b></td>
+                <td><i>:not(div)</i></td>
+                <td>Выберет все элементы на странице кроме элементов div. </td>
+                <td><span style="color:#ff0000;">новый</span></td>
+                </tr>
+                <tr style="background-color: rgb(234, 238, 229);">
+                <td><b><a href="http://www.wisdomweb.ru/editor/wweditor.php?fname=css_linkd" target="_blank">:link</a></b></td>
+                <td>a:link</td>
+                <td>Выберет все не посещенные ссылки на странице.</td>
+                <td>-</td>
+                </tr>
+                <tr>
+                <td><b><a href="http://www.wisdomweb.ru/editor/wweditor.php?fname=css_linkd" target="_blank">:visited</a></b></td>
+                <td>a:visited</td>
+                <td>Выберет все посещенные ссылки на странице.</td>
+                <td>-</td>
+                </tr>
+                <tr style="background-color: rgb(234, 238, 229);">
+                <td><b><a href="http://www.wisdomweb.ru/editor/wweditor.php?fname=css_linkd" target="_blank">:hover</a></b></td>
+                <td>a:hover</td>
+                <td>Выберет все ссылки, на которые наведен курсор мыши.</td>
+                <td>-</td>
+                </tr>
+                <tr>
+                <td><b><a href="http://www.wisdomweb.ru/editor/wweditor.php?fname=css_linkd" target="_blank">:active</a></b></td>
+                <td>a:active</td>
+                <td>Выберет все активные в данный момент ссылки (на которые щелкнули мышкой).</td>
+                <td>-</td>
+                </tr>
+                <tr style="background-color: rgb(234, 238, 229);">
+                <td><b><a href="http://www.wisdomweb.ru/editor/wweditor.php?fname=css_atsel2" target="_blank">[атрибут]</a></b></td>
+                <td>p[id]</td>
+                <td>Выберет все абзацы на странице, которые имеют атрибут id.</td>
+                <td>-</td>
+                </tr>
+                <tr>
+                <td><b><a href="http://www.wisdomweb.ru/editor/wweditor.php?fname=css3_sel1" target="_blank">::selection</a></b></td>
+                <td><i>::selection</i></td>
+                <td>Оформляет выделенный пользователем текст. </td>
+                <td><span style="color:#ff0000;">новый</span></td>
+                </tr>
+                <tr style="background-color: rgb(234, 238, 229);">
+                <td><b><a href="http://www.wisdomweb.ru/editor/wweditor.php?fname=css_atsel1" target="_blank">[атрибут=значение]</a></b></td>
+                <td>p[id="el1"]</td>
+                <td>Выберет все абзацы на странице, которые имеют атрибут id со значением el1.</td>
+                <td>-</td>
+                </tr>
+                <tr>
+                <td><b><a href="http://www.wisdomweb.ru/editor/wweditor.php?fname=cssd_attrsel33" target="_blank">[атрибут~=значение]</a></b></td>
+                <td>a[href~="wisdomweb]"</td>
+                <td>Выберет все ссылки с атрибутом href содержащим в значении подстроку "wisdomweb" отделенную пробелами от остального содержимого.</td>
+                <td>-</td>
+                </tr>
+                <tr style="background-color: rgb(234, 238, 229);"> 
+                <td><b><a href="http://www.wisdomweb.ru/editor/wweditor.php?fname=css3_selattr1" target="_blank">[атрибут^=значение]</a></b></td>
+                <td><i>[src^="http://"]</i></td>
+                <td>Выберет все элементы имеющие атрибут src со значением начинающимся на "http://".</td>
+                <td><span style="color:#ff0000;">новый</span></td>
+                </tr>
+                <tr>
+                <td><b><a href="http://www.wisdomweb.ru/editor/wweditor.php?fname=css3_selattr2" target="_blank">[атрибут$=значение]</a></b></td>
+                <td><i>[src$=".gif"]</i></td>
+                <td>Выберет все элементы имеющие атрибут src со значением заканчивающимся на ".gif".</td>
+                <td><span style="color:#ff0000;">новый</span></td>
+                </tr>
+                <tr style="background-color: rgb(234, 238, 229);">
+                <td><b><a href="http://www.wisdomweb.ru/editor/wweditor.php?fname=css3_selattr3" target="_blank">[атрибут=*значение]</a></b></td>
+                <td><i>[src*="picture"]</i></td>
+                <td>Позволяет выбрать все элементы имеющие атрибут src со значением содержащим подстроку "picture". </td>
+                <td><span style="color:#ff0000;">новый</span></td>
+                </tr>
+                <tr>
+                <td><b><a href="http://www.wisdomweb.ru/editor/wweditor.php?fname=css_pscl3" target="_blank">:first-child</a></b></td>
+                <td>p:first-child</td>
+                <td>Выберет все абзацы, которые являются первыми в родительском элементе.</td>
+                <td>-</td>
+                </tr>
+                <tr style="background-color: rgb(234, 238, 229);">
+                <td><b><a href="http://www.wisdomweb.ru/editor/wweditor.php?fname=css3_lch" target="_blank">:last-child</a></b></td>
+                <td><i>div:last-child</i></td>
+                <td>Позволяет выбрать все элементы div являющиеся последними элементами потомками в родительском. </td>
+                <td><span style="color:#ff0000;">новый</span></td>
+                </tr>
+                <tr>
+                <td><b><a href="http://www.wisdomweb.ru/editor/wweditor.php?fname=css_pscl2" target="_blank">:first-line</a></b></td>
+                <td>p:first-line</td>
+                <td>Оформит первую сточку всех абзацев на странице.</td>
+                <td>-</td>
+                </tr>
+                <tr style="background-color: rgb(234, 238, 229);">
+                <td><b><a href="http://www.wisdomweb.ru/editor/wweditor.php?fname=css_pscl1" target="_blank">:first-letter</a></b></td>
+                <td>p:first-letter</td>
+                <td>Оформит первую букву всех абзацев на странице.</td>
+                <td>-</td>
+                </tr>
+                <tr>
+                <td><b><a href="http://www.wisdomweb.ru/editor/wweditor.php?fname=css_sel5" target="_blank">эл1 эл2</a></b></td>
+                <td>div p</td>
+                <td>Выберет все абзацы являющиеся потомками элемента div.</td>
+                <td>-</td>
+                </tr>
+                <tr style="background-color: rgb(234, 238, 229);">
+                <td><b><a href="http://www.wisdomweb.ru/editor/wweditor.php?fname=css_attrsel15" target="_blank">эл1 &gt; эл2</a></b></td>
+                <td>div &gt; p</td>
+                <td>Выберет все абзацы являющиеся потомками элемента div.</td>
+                <td>-</td>
+                </tr>
+                <tr>
+                <td><b><a href="http://www.wisdomweb.ru/editor/wweditor.php?fname=css_sel6" target="_blank">эл1 + эл2</a></b></td>
+                <td>div + p</td>
+                <td>Выберет все абзацы следующие после элемента div.</td>
+                <td>-</td>
+                </tr>
+                <tr style="background-color: rgb(234, 238, 229);">
+                <td><b><a href="http://www.wisdomweb.ru/editor/wweditor.php?fname=css3_seltild" target="_blank">элемент1~элемент2</a></b></td>
+                <td><i>div~p</i></td>
+                <td>Выберет все элементы div находящиеся перед элементом p.</td>
+                <td><span style="color:#ff0000;">новый</span></td>
+                </tr>
+                <tr>
+                <td><b><a href="http://www.wisdomweb.ru/editor/wweditor.php?fname=css_pscl4" target="_blank">:before</a></b></td>
+                <td>p:before</td>
+                <td>Вставит произвольное содержимое перед элементом p.</td>
+                <td>-</td>
+                </tr>
+                <tr style="background-color: rgb(234, 238, 229);">
+                <td><b><a href="http://www.wisdomweb.ru/editor/wweditor.php?fname=css_pscl4" target="_blank">:after</a></b></td>
+                <td>p:after</td>
+                <td>Вставит произвольное содержимое после элемента p.</td>
+                <td>-</td>
+                </tr>
+                <tr>
+                <td><b><a href="http://www.wisdomweb.ru/editor/wweditor.php?fname=css_pscl5" target="_blank">:focus</a></b></td>
+                <td>input:focus</td>
+                <td>Выберет все активные элементы ввода на странице.</td>
+                <td>-</td>
+                </tr>
+                <tr style="background-color: rgb(234, 238, 229);">
+                <td><b><a href="http://www.wisdomweb.ru/editor/wweditor.php?fname=css3_selenabled" target="_blank">:enabled</a></b></td>
+                <td><i>:enabled</i></td>
+                <td>Позволяет выбрать все работоспособные элементы ввода. </td>
+                <td><span style="color:#ff0000;">новый</span></td>
+                </tr>
+                <tr>
+                <td><b><a href="http://www.wisdomweb.ru/editor/wweditor.php?fname=css3_seldisabled" target="_blank">:disabled</a></b></td>
+                <td><i>:disabled</i></td>
+                <td>Позволяет выбрать все неработоспособные элементы ввода. </td>
+                <td><span style="color:#ff0000;">новый</span></td>
+                </tr>
+                <tr style="background-color: rgb(234, 238, 229);">
+                <td><b><a href="http://www.wisdomweb.ru/editor/wweditor.php?fname=css3_fot" target="_blank">:first-of-type</a></b></td>
+                <td><i>div:first-of-type</i></td>
+                <td>Позволяет выбрать все элементы div являющиеся первыми в родительском. </td>
+                <td><span style="color:#ff0000;">новый</span></td>
+                </tr>
+                <tr>
+                <td><b><a href="http://www.wisdomweb.ru/editor/wweditor.php?fname=css3_lot" target="_blank">:last-of-type</a></b></td>
+                <td><i>div:last-of-type</i></td>
+                <td>Позволяет выбрать все элементы div являющиеся последними в родительском. </td>
+                <td><span style="color:#ff0000;">новый</span></td>
+                </tr>
+                <tr style="background-color: rgb(234, 238, 229);">
+                <td><b><a href="http://www.wisdomweb.ru/editor/wweditor.php?fname=css3_oot" target="_blank">:only-of-type</a></b></td>
+                <td><i>div:only-of-type</i></td>
+                <td>Позволяет выбрать все элементы div, которые являются уникальными родительском. </td>
+                <td><span style="color:#ff0000;">новый</span></td>
+                </tr>
+                <tr>
+                <td><b><a href="http://www.wisdomweb.ru/editor/wweditor.php?fname=css3_nth" target="_blank">:nth-child(x)</a></b></td>
+                <td><i>div:nth-child(3)</i></td>
+                <td>Позволяет выбрать все элементы div являющиеся третьими по счету в родительском. </td>
+                <td><span style="color:#ff0000;">новый</span></td>
+                </tr>
+                <tr style="background-color: rgb(234, 238, 229);">
+                <td><b><a href="http://www.wisdomweb.ru/editor/wweditor.php?fname=css3_nls" target="_blank">:nth-last-child(x)</a></b></td>
+                <td><i>div:nth-last-child(2)</i></td>
+                <td>Позволяет выбрать все элементы div являющиеся вторыми элементами потомками в родительском с конца. </td>
+                <td><span style="color:#ff0000;">новый</span></td>
+                </tr>
+                <tr>
+                <td><b>:root</b></td>
+                <td><i>:root</i></td>
+                <td>Позволяет выбрать корневой элемент документа. </td>
+                <td><span style="color:#ff0000;">новый</span></td>
+                </tr>
+                <tr style="background-color: rgb(234, 238, 229);">
+                <td><b><a href="http://www.wisdomweb.ru/editor/wweditor.php?fname=css3_selempty" target="_blank">:empty</a></b></td>
+                <td><i>p:empty</i></td>
+                <td>Позволяет выбрать пустые абзацы. </td>
+                <td><span style="color:#ff0000;">новый</span></td>
+                </tr>
+                </tbody></table>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- End css-selectors-content-->
+  <!-- Cookie-->
+  <div role="status" class="cookie">
+    <div class="cookie__content">
+      <p class="cookie__content_text f1-L">Этот сайт использует файлы cookies для более комфортной работы пользователя. Продолжая просмотр страниц сайта, вы соглашаетесь с использованием  файлов cookies. Если вам нужна дополнительная информация, пожалуйста, посетите страницу <a href="#" class="cookie__content_link">"Политика конфиденциальности".</a></p>
+      <div class="cookie__content_close"><img src="" alt="close icon" class="cookie__content_close-img"/></div>
+    </div>
+  </div>
+  <!-- End cookie-->
+  <!-- Footer-->
+  <footer role="contentinfo" class="site-footer">
+    <div class="bottom-line">
+      <div class="container">
+        <div class="bottom-line__content">
+          <h2 class="bottom-line__content_h2 h2">База знаний</h2>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End footer-->
+  <!-- JS and CSS-->
+  <noscript><link href="css/style.css" rel="stylesheet"></noscript>
+  <script>(function(w, d){var b = d.getElementsByTagName('body')[0];var s = d.createElement("script"); var v = !("IntersectionObserver" in w) ? "8.17.0" : "10.19.0";s.async = true;s.src = "https://cdn.jsdelivr.net/npm/vanilla-lazyload@" + v + "/dist/lazyload.min.js";w.lazyLoadOptions = {/* Your options here */ threshold: 300, elements_selector: ".lazy", to_webp: true };b.appendChild(s);}(window, document));</script>
+  <script src="js/scripts.js" async="async"></script>
+  <!-- End JS and CSS-->
+</body>
+<html/>

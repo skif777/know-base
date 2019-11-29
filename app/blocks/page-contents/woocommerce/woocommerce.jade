@@ -1,0 +1,85 @@
+//- Шаблон
+extends ../../layout-jade/layout
+
+//- Переменные 
+block variables
+	- var title = 'Woocommerce'
+	- var site = 'site.ru'
+	- var link = 'https://my-site.ru'
+	- var description = 'Описание страницы'
+	- var siteName = 'site name'
+	- var keywords = 'Кючевые слова'
+	- var body = 'is-woocommerce'
+
+//- Контент
+block content-page
+	// woocommerce-content
+	main(class="woocommerce-content", role="main")
+		section.woocommerce
+			.container 
+				.woocommerce__content 
+					h4 Подключение woocommerce
+					ul 
+						li Установить плагин 
+							a(href="https://ru.wordpress.org/plugins/woocommerce/") Скачать 
+						li Добавить поддержку в function.php 
+							a(href="https://github.com/woocommerce/woocommerce/wiki/Declaring-WooCommerce-support-in-themes") Подробнее
+					h4 Переопределение шаблонов
+					ul 
+						li Создать папку woocommerce в разрабатываемой теме
+						li Скопировать шаблоны из папки плагина wp-content/plugins/woocommerce/templates/
+						li 
+							a(href="https://docs.woocommerce.com/document/template-structure/") Подробнее
+					h4 Вертска контейнера
+					ul 
+						li добавления контейнера для верстки делает в woocommerce/global/wrapper-start.php
+						li отключение css стилей woocomerce 
+							a(href="https://docs.woocommerce.com/document/disable-the-default-stylesheet/") Смотреть
+					h4 Переподключение хлебных крошек
+					ul
+						li отключить старые добавив хук в function.php (remove_action)
+						li прикрепить к новому хуку ( add_action() )
+						li инициализировать в теме с помощью функции do_action()
+					h4 Вывод корзины
+					ul
+						li Вывод содержимого корзины черерз хук
+							ul 
+								li создать функцию в function.php (add_action)
+								li содержимое фнукции указать <?php the_widget( 'WC_Widget_Cart', 'title=' ); ?> (или добавить напрямую в файл темы)
+								li вывести в тему через хук (do_action)
+						li Вывод счетчика корзины 
+							ul 
+								li добавить код в файл темы < div class="header-cart-count"><?php echo WC()->cart->get_cart_contents_count(); ?>< /div>
+								li прикрепить в function.php функцию к хуку фильтру 
+									a(href="https://iconicwp.com/blog/update-custom-cart-count-html-ajax-add-cart-woocommerce/") подробнее
+					h4 Ajax обновление добавления в корзину
+					ul
+						li через	
+							a(href="https://wordpress.org/plugins/woo-ajax-add-to-cart/") plugin Ajax add to cart for WooCommerce
+						li вручную
+							a(href="https://quadmenu.com/add-to-cart-with-woocommerce-and-ajax-step-by-step/") Смотреть
+					h4 Подключение и настройка функций в Woocomerce
+					ul 
+						li Создать функцию is_woocommerce_activated
+						li Создать условие в function.php если функция существует то подключить require get_template_directory() . '/inc/woocomerce-functions.php';
+						li Примеры в block/_functions-template/function-woocommerce.php
+					h4 Вывод товаров на страницу
+					ul 
+						li с помощью 
+							a(href="https://wp-kama.ru/function/do_shortcode")  шорт кода 
+								span <?php echo do_shortcode('[products limit="4" columns="2" visibility="featured" ]'); ?>
+						li 
+							a(href="https://docs.woocommerce.com/document/woocommerce-shortcodes/") Подробнее документация WC
+					h4 Отключение стилей 
+					ul 
+						li Добавить функцию отключения стилей
+							a(href="https://docs.woocommerce.com/document/disable-the-default-stylesheet/")  подробнее
+					h4 Описание структуры файлов папки woocomerce 
+					ul 
+						li content-single-product.php - настройка структуры страницы товара, можно задать col-6, изменять с помощью хуков
+						li single-product.php - настройка страницы товара без основного контента (изображения, описание, табы), можно отключить сайд бар
+						li content-product.php - настройка списка товаров в категории, можно задавать классы к тегу li или изменить его, доступ к контейнеру ul в loop/loop-start.php
+						li archive-product.php - структура страница категории товаров (/shop), изменять с помощью хуков
+
+	// End woocommerce-content
+

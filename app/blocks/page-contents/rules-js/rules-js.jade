@@ -1,0 +1,27 @@
+//- Шаблон
+extends ../../layout-jade/layout
+
+//- Переменные 
+block variables
+	- var title = 'Правила JavaSripts'
+	- var site = 'site.ru'
+	- var link = 'https://my-site.ru'
+	- var description = 'Описание страницы'
+	- var siteName = 'site name'
+	- var keywords = 'Кючевые слова'
+	- var body = 'is-rules-js'
+
+//- Контент
+block content-page
+	// rules-js-content
+	main(class="rules-js-content", role="main")
+		section.rules-js
+			.container 
+				.rules-js__content 
+					h4 Правила
+					ul 
+						li Использовать способ написания на языке ECMAScript 6 и выше, но для поддержки старых браузеров скомпилировать через Babel
+
+
+	// End rules-js-content
+

@@ -1,0 +1,27 @@
+//- Шаблон
+extends ../../layout-jade/layout
+
+//- Переменные 
+block variables
+	- var title = 'Выравнивание по центру'
+	- var site = 'site.ru'
+	- var link = 'https://my-site.ru'
+	- var description = 'Описание страницы'
+	- var siteName = 'site name'
+	- var keywords = 'Кючевые слова'
+	- var body = 'is-center-css'
+
+//- Контент
+block content-page
+	// center-css-content
+	main(class="center-css-content", role="main")
+		section.center-css
+			.container
+				.center-css__content 
+					h4 Выравнивание по центру 1
+					p position: absolute;
+					p left: 50%;
+					p margin-left: -50%;
+
+	// End center-css-content
+

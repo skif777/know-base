@@ -1,0 +1,27 @@
+//- Шаблон
+extends ../../layout-jade/layout
+
+//- Переменные 
+block variables
+	- var title = 'Полезные сайты'
+	- var site = 'site.ru'
+	- var link = 'https://my-site.ru'
+	- var description = 'Описание страницы'
+	- var siteName = 'site name'
+	- var keywords = 'Кючевые слова'
+	- var body = 'is-useful-sites'
+
+//- Контент
+block content-page
+	// useful-sites-content
+	main(class="useful-sites-content", role="main")
+		section.useful-sites
+			.container 
+				.useful-sites__content 
+					ol 
+						li https://wp-kama.ru/ - Сайт о движке WordPress: кодекс, функции, готовые коды, плагины, хуки, вопросы и ответы, статьи для новичков и профи.
+						li https://docs.woocommerce.com/ - документация по woocomerce
+						li https://developer.wordpress.org/themes/advanced-topics/child-themes/ - создание дочерних тем для WP
+
+	// End useful-sites-content
+

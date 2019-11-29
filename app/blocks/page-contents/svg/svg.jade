@@ -1,0 +1,49 @@
+//- Шаблон
+extends ../../layout-jade/layout
+
+//- Переменные 
+block variables
+	- var title = 'SVG графика'
+	- var site = 'site.ru'
+	- var link = 'https://my-site.ru'
+	- var description = 'Описание страницы'
+	- var siteName = 'site name'
+	- var keywords = 'Кючевые слова'
+	- var body = 'is-svg'
+
+//- Контент
+block content-page
+	// svg-content
+	main(class="svg-content", role="main")
+		section.svg
+			.container
+				.svg__content
+				h4 Способы добавения SVG 
+				ol 
+					li через html тег < img 
+					li через css bacground-image
+					li через html тег < object (для сложной графики)
+					li через html тег < svg 
+					i У тега < svg fill="#000" используется для установки цвета
+				h4 CSS SVG 
+				ul 
+					li fill: - фон
+					li fill-rule: - цвет пересечений
+					li fill-opacity: - прозрачность
+					li stroke: - цвет обводки
+					li stroke-width: - тольщина обводки
+					li stroke-linecap: - концы линий
+					li stroke-linejoin: - соединение линий на углах
+					li strore-dashrray: - вид пунктирной обводки
+					li stroke-dashoffset: - смещений пунктирной обводки
+					li stroke-opacity: - прозрачность обводки
+				h4 Создание svg спрайта
+				ol
+					li собрать все svg иконки в один файл svg с помощью gulp
+					li открываем этот svg файл у тега < svg ставим display: none;
+					li добавляем svg файл в local Storage
+					li при верстве пишем: < svg> < use xlink:href="#icon name" /> </ svg>
+					i !Размеры можно регулировать инлайн у тега svg
+
+	// End svg-content
+

@@ -1,0 +1,32 @@
+//- Шаблон
+extends ../../layout-jade/layout
+
+//- Переменные 
+block variables
+	- var title = 'Gulp - такс менеджер'
+	- var site = 'site.ru'
+	- var link = 'https://my-site.ru'
+	- var description = 'Описание страницы'
+	- var siteName = 'site name'
+	- var keywords = 'Кючевые слова'
+	- var body = 'is-gulp'
+
+//- Контент
+block content-page
+	// gulp-content
+	main(class="gulp-content", role="main")
+		section.gulp
+			.container 
+				.gulp__content 
+					h4 Начало работы 
+					ul 
+						li Скачать 
+							a(href="https://nodejs.org/en/") node.js 
+						li Установить gulp глобально один раз - npm i -g gulp
+						li Уставновить в рабочую папку - npm i --sev-dev gulp
+						li Инициализировать Package.json - npm init 
+						li Установить gulp плагины - npm --save-dev i 'названия плагина' 'названия плагина' 'названия плагина' 'названия плагина' 
+						i Имя пользователя ПК должно быть на английском
+
+	// End gulp-content
+

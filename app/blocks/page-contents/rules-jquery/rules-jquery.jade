@@ -1,0 +1,26 @@
+//- Шаблон
+extends ../../layout-jade/layout
+
+//- Переменные 
+block variables
+	- var title = 'Правила Jquery'
+	- var site = 'site.ru'
+	- var link = 'https://my-site.ru'
+	- var description = 'Описание страницы'
+	- var siteName = 'site name'
+	- var keywords = 'Кючевые слова'
+	- var body = 'is-rules-jquery'
+
+//- Контент
+block content-page
+	// rules-jquery-content
+	main(class="rules-jquery-content", role="main")
+		section.rules-jquery
+				.container 
+					.rules-jquery__content
+					h4 Правила
+					ul 
+						li В начале файла с функциями добавить функцию document ready function
+
+	// End rules-jquery-content
+

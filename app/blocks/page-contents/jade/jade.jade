@@ -1,0 +1,25 @@
+//- Шаблон
+extends ../../layout-jade/layout
+
+//- Переменные 
+block variables
+	- var title = 'Jade'
+	- var site = 'site.ru'
+	- var link = 'https://my-site.ru'
+	- var description = 'Описание страницы'
+	- var siteName = 'site name'
+	- var keywords = 'Кючевые слова'
+	- var body = 'is-jade'
+
+//- Контент
+block content-page
+	// jade-content
+	main(class="jade-content", role="main")
+		section(class="jade")
+			.container 
+				.jade__content 
+					
+
+
+	// End jade-content
+

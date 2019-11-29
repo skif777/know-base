@@ -1,0 +1,27 @@
+//- Шаблон
+extends ../../layout-jade/layout
+
+//- Переменные 
+block variables
+	- var title = 'Тень css'
+	- var site = 'site.ru'
+	- var link = 'https://my-site.ru'
+	- var description = 'Описание страницы'
+	- var siteName = 'site name'
+	- var keywords = 'Кючевые слова'
+	- var body = 'is-box-shadow'
+
+//- Контент
+block content-page
+	// box-shadow-content
+	main(class="box-shadow-content", role="main")
+		section.box-shadow 
+			.container 
+				.box-shadow__content 
+					p box-shadow: 10px 10px 10px 10px
+					p.mb-5 1 - сдвиг по горизонтали, 2 - сдвиг по вертикали, 3 - размытие, 4 - увеличение размера по горизонтали
+					p box-shadow: inset 10px 10px 10px 10px #000;
+					p.mb-5 тень внутри
+
+	// End box-shadow-content
+

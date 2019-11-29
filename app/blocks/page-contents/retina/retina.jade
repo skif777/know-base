@@ -1,0 +1,24 @@
+//- Шаблон
+extends ../../layout-jade/layout
+
+//- Переменные 
+block variables
+	- var title = 'Оптимизация сайтов под Retina-экраны'
+	- var site = 'site.ru'
+	- var link = 'https://my-site.ru'
+	- var description = 'Описание страницы'
+	- var siteName = 'site name'
+	- var keywords = 'Кючевые слова'
+	- var body = 'is-retina'
+
+//- Контент
+block content-page
+	// retina-content
+	main(class="retina-content", role="main")
+		section.retina
+			.container 
+				.retina__content 
+					
+
+	// End retina-content
+

@@ -1,0 +1,31 @@
+//- Шаблон
+extends ../../layout-jade/layout
+
+//- Переменные 
+block variables
+	- var title = 'Mobile first'
+	- var site = 'site.ru'
+	- var link = 'https://my-site.ru'
+	- var description = 'Описание страницы'
+	- var siteName = 'site name'
+	- var keywords = 'Кючевые слова'
+	- var body = 'is-mobile first'
+
+//- Контент
+block content-page
+	// mobile first-content
+	main(class="mobile first-content", role="main")
+		section.mobile-first 
+			.container 
+				.mobile-first__content 
+					ul 
+						li сначала мобильная версия верстается потом декстопная, через меди запросы
+						li показать самое важное содержимое в первую очередь
+						li сайт должен быть легковесный и оптимизированным
+						li загружать только самое необходимое
+						li мин размер тач зоны 9x9px 
+						li расстояние между тач зонами мин 2мм 
+						li если CSS файл больше 512кб сделать раздельный CSS на декстоп и на мобильную версию
+
+	// End mobile first-content
+

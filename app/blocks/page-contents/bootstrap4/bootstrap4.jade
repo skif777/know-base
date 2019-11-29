@@ -1,0 +1,56 @@
+//- Шаблон
+extends ../../layout-jade/layout
+
+//- Переменные 
+block variables
+	- var title = 'Bootstrap 4'
+	- var site = 'site.ru'
+	- var link = 'https://my-site.ru'
+	- var description = 'Описание страницы'
+	- var siteName = 'site name'
+	- var keywords = 'Кючевые слова'
+	- var body = 'is-bootstrap-four'
+
+//- Контент
+block content-page
+	// bootstrap-four-content
+	main(class="bootstrap-four-content", role="main")
+		section.bootstrap-four
+			.container 
+				.bootstrap-four__content 
+					h4 Bootsrap классы
+					ul 
+						li col-12 - маленькая сетка в ширину
+						li col-sm-12 - средняя сетка в ширину 
+						li col-md-12 - большая сетка в ширину 
+						li col-lg-12 - оч большая сетка в ширину 
+						li col-xl-12 - самая большая сетка в ширину 
+						li col-sm-auto - авто ширина сетки
+						li d-100 - ширина 100%
+						li order-1 - порядок блока (для контейнера)
+						li offset-md-4 - отступы сетки 
+						li align-items-center - выравнивание по вертикали
+						li justify-content-center - выравнивание по горизонтали
+						li align-self-center - выравнивание по вертикали и по центру
+						li no-gutters - убирает отступы между ячейками (row)
+						li order-first/last - порядок блоков
+						li d-flex - добавляет display: flex, нужен для многих классов 
+						li flex-column - уставнавливает элементы по вертикали
+						li d-inline-flex - добавляет display: inline-flex
+						li p-2 - добавляет pading (отступы)
+						li m-2 - добавляет margin (удаленнность от элемета)
+						li flex-row - выравнивает элементы в ряд
+						li flex-row-reverse - выравнивает элементы в ряд справа
+						li flex-column-reverse - выравнивает элементы в столбец от низа
+						li flex-nowrap - выравнивает элменты в одну линию
+						li flex-wrap - выравнивает элменты в несколько строк когда не вмещаются в одну
+						i Ко всем классам можно добавить размер по примеру col-lg-12, d-flex-sm-6 и т.д.
+					h4 Bootsrap mixins
+					ul
+						li +media-breakpoint-between(sm, md) - медиа запрос max-width и min-width
+						li +media-breakpoint-down(sm, md) - медиа запрос max-width и min-width 
+						li +media-breakpoint-up(sm, md) - медиа запрос max-width и min-width 
+						li +media-breakpoint-only(sm, md) - медиа запрос max-width и min-width 
+
+	// End bootstrap-four-content
+

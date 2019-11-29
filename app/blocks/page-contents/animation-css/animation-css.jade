@@ -1,0 +1,58 @@
+//- Шаблон
+extends ../../layout-jade/layout
+
+//- Переменные 
+block variables
+	- var title = 'Анимация CSS'
+	- var site = 'site.ru'
+	- var link = 'https://my-site.ru'
+	- var description = 'Описание страницы'
+	- var siteName = 'site name'
+	- var keywords = 'Кючевые слова'
+	- var body = 'is-animation-css'
+
+//- Контент
+block content-page
+	// animation-css-content
+	main(class="animation-css-content", role="main")
+		section.animation-css
+			.container 
+				.animation-css__content
+					h4 Анимация переходы
+					ul 
+						li transition: transition-property transition-duration transition-timing-function transition-delay
+						li transition-property - Содержит название CSS-свойств, к которым будет применен эффект перехода. Значение свойства может содержать как одно свойство, так и список свойств через запятую. (none, all, initial, inherit)
+						li transition-duration - Задаёт промежуток времени, в течение которого должен осуществляться переход. (1s, 5ms, initial, inherit)
+						li transition-timing-function - Свойство задаёт временную функцию, которая описывает скорость перехода объекта от одного значения к другому. Если вы определяете более одного перехода для элемент, например, цвет фона элемента и его положение, вы можете использовать разные функции для каждого свойства. Свойство не наследуется. (ease, linear, ease-in, ease-out, ease-in-out, cubic-bezier(x1, y1, x2, y2), initial, inherit)
+						li transition-delay - Необязательное свойство, позволяет сделать так, чтобы изменение свойства происходило не моментально, а с некоторой задержкой. Не наследуется. (1s, 5ms, initial, inherit)
+						li transition - Краткая запись перехода
+					h4 Анимация
+					ul
+						li @keyframes имя анимации { список правил }
+						li @keyframes shadow { 
+							span.d-block from {text-shadow: 0 0 3px black;}
+							span.d-block 50% {text-shadow: 0 0 30px black;}
+							span.d-block to {text-shadow: 0 0 3px black;}
+							span.d-block }
+						i Ключевые кадры создаются с помощью ключевых слов from и to (эквивалентны значениям 0% и 100%) или с помощью процентных пунктов, которых можно задавать сколько угодно. Также можно комбинировать ключевые слова и процентные пункты.
+						li После объявления правила @keyframes, мы можем ссылаться на него в свойстве animation:
+						li h1 {
+							span.d-block font-size: 3.5em;
+							span.d-block color: darkmagenta;
+							span.d-block animation: shadow  2s infinite ease-in-out;
+							span.d-block }
+						li Краткая запись анимации: свойство animation
+						li animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-direction;
+						li animation-name - Свойство animation-name определяет список применяемых к элементу анимаций. Каждое имя используется для выбора ключевого кадра в правиле, которое предоставляет значения свойств для анимации. Если имя не соответствует ни одному ключевому кадру в правиле, нет свойств для анимации, отсутствует имя анимации, анимация не будет выполняться.
+						li animation-duration - Свойство animation-duration определяет продолжительность одного цикла анимации. Задаётся в секундах s или миллисекундах ms. Если для элемента задано более одной анимации, то можно установить разное время для каждой, перечислив значения через запятую.
+						li animation-timing-function - Свойство animation-timing-function описывает, как будет развиваться анимация между каждой парой ключевых кадров. Во время задержки анимации временные функции не применяются.
+						li animation-iteration-count - Свойство animation-iteration-count указывает, сколько раз проигрывается цикл анимации. Начальное значение 1 означает, что анимация будет воспроизводиться от начала до конца один раз. Это свойство часто используется в сочетании со значением alternate свойства animation-direction, которое заставляет анимацию воспроизводиться в обратном порядке в альтернативных циклах.
+						li animation-direction - Свойство animation-direction определяет, должна ли анимация воспроизводиться в обратном порядке в некоторых или во всех циклах. Когда анимация воспроизводится в обратном порядке, временные функции также меняются местами. Например, при воспроизведении в обратном порядке функция ease-in будет вести себя как ease-out.
+						li animation-play-state - Свойство animation-play-state определяет, будет ли анимация запущена или приостановлена. Остановка анимации внутри цикла возможна через использование этого свойства в скрипте JavaScript. Также можно останавливать анимацию при наведении курсора мыши на объект — состояние :hover.
+						li animation-delay - Свойство animation-delay определяет, когда анимация начнется. Задается в секундах s или миллисекундах ms.
+						li animation-fill-mode - Свойство animation-fill-mode определяет, какие значения применяются анимацией вне времени ее выполнения. Когда анимация завершается, элемент возвращается к своих исходным стилям. По умолчанию анимация не влияет на значения свойств, когда анимация применяется к элементу — animation-name и animation-delay. Кроме того, по умолчанию анимация не влияет на значения свойств после ее завершения — animation-duration и animation-iteration-count. Свойство animation-fill-mode может переопределить это поведение.
+
+
+
+	// End animation-css-content
+

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<!-- #if expr="$HTTP_COOKIE=/webfont-loaded=true/" -->
+<html lang="ru" class="webfont-loaded"/>
+<!-- #else-->
+<html lang="ru"/>
+<!-- #endif-->
+<head>
+  <!-- META теги-->
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="keywords" content="Кючевые слова"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <!-- Open Graph-->
+  <meta property="og:title" content="Jade"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="site.ru"/>
+  <meta property="og:image" content="img/OpenGraph/og-image.jpg"/>
+  <meta property="og:image:secure_url" content="img/OpenGraph/og-image.jpg"/>
+  <meta property="og:description" name="description" content="Описание страницы"/>
+  <meta property="og:site_name" content="site name"/>
+  <meta property="og:locale" content="ru_RU"/>
+  <!-- Заголовок-->
+  <title>Jade</title>
+  <!-- Manifest-->
+  <link rel="manifest" href="site.webmanifest"/>
+  <!-- Canonical-->
+  <link rel="canonical" href="https://my-site.ru"/>
+  <!-- Favicon-->
+  <link rel="icon" href="img/Favicon/favicon.ico" type="image/x-icon"/>
+  <link rel="shortcut icon" href="img/Favicon/favicon.ico" type="image/x-icon"/>
+  <link rel="icon" type="image/png" href="img/Favicon/favicon-16x16.png" sizes="16x16"/>
+  <link rel="icon" type="image/png" href="img/Favicon/favicon-32x32.png" sizes="32x32"/>
+  <link rel="icon" type="image/png" href="img/Favicon/favicon-96x96.png" sizes="96x96"/>
+  <link rel="icon" type="image/png" href="img/Favicon/favicon-196x196.png" sizes="96x96"/>
+  <link rel="icon" type="image/png" href="img/Favicon/favicon-228x228.png" sizes="96x96"/>
+  <link rel="apple-touch-icon" sizes="57x57" href="img/Favicon/apple-touch-icon-57x57.png"/>
+  <link rel="apple-touch-icon" sizes="114x114" href="img/Favicon/apple-touch-icon-114x114.png"/>
+  <link rel="apple-touch-icon" sizes="72x72" href="img/Favicon/apple-touch-icon-72x72.png"/>
+  <link rel="apple-touch-icon" sizes="144x144" href="img/Favicon/apple-touch-icon-144x144.png"/>
+  <link rel="apple-touch-icon" sizes="60x60" href="img/Favicon/apple-touch-icon-60x60.png"/>
+  <link rel="apple-touch-icon" sizes="120x120" href="img/Favicon/apple-touch-icon-120x120.png"/>
+  <link rel="apple-touch-icon" sizes="76x76" href="img/Favicon/apple-touch-icon-76x76.png"/>
+  <link rel="apple-touch-icon" sizes="152x152" href="img/Favicon/apple-touch-icon-152x152.png"/>
+  <meta name="msapplication-TileColor" content="#2b5797"/>
+  <meta name="msapplication-TileImage" content="img/Favicon/tile144x144.png"/>
+  <!-- chrome, firefox OS and opera-->
+  <meta name="theme-color" content="#000"/>
+  <!-- windows phone-->
+  <meta name="msapplication-navbutton-color" content="#000"/>
+  <!-- ios safari-->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000"/>
+  <!-- Preloading images-->
+  <link rel="preload" as="image" href="img/logo.jpg"/>
+  <!-- Preloading fonts-->
+  <link rel="preload" href="#" as="font" type="font/woff2" crossorigin="crossorigin"/>
+  <!-- Preload Styles-->
+  <style>body{opacity:0;overflow-x:hidden;} html{background-color: #000;}</style>
+  <link href="css/style.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+  <script>!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);</script>
+</head>
+<body class="is-jade">
+  <!-- [if lte IE 9]
+  <p class="browserupgrade", role="alert">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="https://browsehappy.com/">обновите бразуер</a> для корректного отображения сайта.</p>
+  <![endif]
+  -->
+  <!-- Кнопка на вверх -->
+  <div id="up-button">Наверх</div>
+  <!-- End Кнопка на вверх-->
+  <!-- Header-->
+  <header class="site-header">
+    <div class="top-line">
+      <div class="container">
+        <div class="top-line__content">
+          <!-- Logo-->
+          <div role="banner" class="top-line__logo"><a href="/index.html" title="logo" class="h1">База знаний</a></div>
+          <!--  End logo-->
+        </div>
+      </div>
+    </div>
+    <h2 class="h2">Jade</h2>
+  </header>
+  <!-- End header-->
+  <!-- jade-content-->
+  <main role="main" class="jade-content">
+    <section class="jade">
+      <div class="container"> 
+        <div class="jade__content"> 
+          <div id="file-pug-md-readme" class="Box-body readme blob instapaper_body js-code-block-container">
+            <article class="markdown-body entry-content p-5" itemprop="text"><h1><a id="user-content-препроцессор-pugjade" class="anchor" aria-hidden="true" href="#препроцессор-pugjade"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Препроцессор Pug(Jade)</h1>
+        <p>Pug - это препроцессор HTML и шаблонизатор, который был написан на JavaScript для Node.js.</p>
+        <h4><a id="user-content-содержание" class="anchor" aria-hidden="true" href="#содержание"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a name="user-content-содержание"></a>Содержание:</h4>
+        <ol>
+        <li><a href="#%D0%A2%D0%B5%D0%B3%D0%B8">Теги</a></li>
+        <li><a href="#%D0%A2%D0%B5%D0%BA%D1%81%D1%82">Текст</a></li>
+        <li><a href="#%D0%90%D1%82%D1%80%D0%B8%D0%B1%D1%83%D1%82%D1%8B">Атрибуты</a></li>
+        <li><a href="#%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D1%83%D1%80%D0%BA%D1%86%D0%B8%D1%8F-Switch-Case">Констуркция Switch Case</a></li>
+        <li><a href="#%D0%A6%D0%B8%D0%BA%D0%BB%D1%8B">Циклы</a></li>
+        <li><a href="#%D0%92%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0-JavaScript-%D0%BA%D0%BE%D0%B4%D0%B0">Вставка JavaScript кода</a></li>
+        <li><a href="#%D0%9A%D0%BE%D0%BC%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%80%D0%B8%D0%B8">Комментарии</a></li>
+        <li><a href="#%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F">Условия</a></li>
+        <li><a href="#%D0%A2%D0%B8%D0%BF-%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B0">Тип документа</a></li>
+        <li><a href="#%D0%98%D0%BD%D0%BA%D0%BB%D1%8E%D0%B4%D1%8B">Инклюды (Includes)</a></li>
+        <li><a href="#%D0%9D%D0%B0%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%D0%BE%D0%B2">Наследование шаблонов</a></li>
+        <li><a href="#%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BF%D0%BE%D0%BB%D1%8F%D1%86%D0%B8%D1%8F-%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D1%85">Интерполяция переменных</a></li>
+        <li><a href="#%D0%9C%D0%B8%D0%BA%D1%81%D0%B8%D0%BD%D1%8B">Миксины</a></li>
+        <li><a href="#%D0%90%D1%81%D1%81%D0%BE%D1%86%D0%B8%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9-%D0%BC%D0%B0%D1%81%D1%81%D0%B8%D0%B2">Многострочный ассоциативный массив</a></li>
+        </ol>
+        <p><a href="https://pugjs.org/language/attributes.html" rel="nofollow">Официальная документация по Pug</a></p>
+        <h3><a id="user-content--теги" class="anchor" aria-hidden="true" href="#-теги"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a name="user-content-теги"></a> Теги</h3>
+        <p>В Pug нет закрывающих тегов, вместо этого он использует строгую табуляцию (или отступы) для определения вложености тегов.
+        Для закрытия тегов в конце необходимо добавить символ <code>/</code>: <code>foo(bar='baz')/</code></p>
+        <p>Pug</p>
+        <div class="highlight highlight-text-jade"><pre>ul
+          li Item A
+          li Item B
+          li Item C</pre></div>
+        <p>HTML</p>
+        <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">ul</span>&gt;
+          &lt;<span class="pl-ent">li</span>&gt;Item A&lt;/<span class="pl-ent">li</span>&gt;
+          &lt;<span class="pl-ent">li</span>&gt;Item B&lt;/<span class="pl-ent">li</span>&gt;
+          &lt;<span class="pl-ent">li</span>&gt;Item C&lt;/<span class="pl-ent">li</span>&gt;
+        &lt;/<span class="pl-ent">ul</span>&gt;</pre></div>
+        <h3><a id="user-content--текст" class="anchor" aria-hidden="true" href="#-текст"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a name="user-content-текст"></a> Текст</h3>
+        <p>Непосредственно в Pug можно вставлять элементы в HTML синтаксисе</p>
+        <p>Pug</p>
+        <div class="highlight highlight-text-jade"><pre>p This is plain old &lt;<span class="pl-ent">em</span>&gt;text&lt;/<span class="pl-ent">em</span>&gt; content.</pre></div>
+        <p>HTML</p>
+        <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">p</span>&gt;This is plain old &lt;<span class="pl-ent">em</span>&gt;text&lt;/<span class="pl-ent">em</span>&gt; content.&lt;/<span class="pl-ent">p</span>&gt;</pre></div>
+        <hr>
+        <p>Pug</p>
+        <div class="highlight highlight-text-jade"><pre>p
+          | The pipe always goes at the beginning of its own line,
+          | not counting indentation.</pre></div>
+        <p>HTML</p>
+        <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">p</span>&gt;The pipe always goes at the beginning of its own line, not counting indentation.&lt;/<span class="pl-ent">p</span>&gt;</pre></div>
+        <h3><a id="user-content--атрибуты" class="anchor" aria-hidden="true" href="#-атрибуты"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a name="user-content-атрибуты"></a> Атрибуты</h3>
+        <p>В Pug можно встраивать JavaScript код, благодаря чему возможны конструкции показанные ниже.</p>
+        <p>Pug</p>
+        <div class="highlight highlight-text-jade"><pre>a<span class="pl-c1">(</span><span class="pl-e">href</span>=<span class="pl-s">'google.com'</span><span class="pl-c1">)</span> Google
+        |
+        |
+        a<span class="pl-c1">(</span><span class="pl-e">class</span>=<span class="pl-s">'button'</span> <span class="pl-e">href</span>=<span class="pl-s">'google.com'</span><span class="pl-c1">)</span> Google
+        |
+        |
+        a<span class="pl-c1">(</span><span class="pl-e">class</span>=<span class="pl-s">'button'</span>, <span class="pl-e">href</span>=<span class="pl-s">'google.com'</span><span class="pl-c1">)</span> Google</pre></div>
+        <p>HTML</p>
+        <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>google.com<span class="pl-pds">"</span></span>&gt;Google&lt;/<span class="pl-ent">a</span>&gt;
+        &lt;<span class="pl-ent">a</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>button<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>google.com<span class="pl-pds">"</span></span>&gt;Google&lt;/<span class="pl-ent">a</span>&gt;
+        &lt;<span class="pl-ent">a</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>button<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>google.com<span class="pl-pds">"</span></span>&gt;Google&lt;/<span class="pl-ent">a</span>&gt;</pre></div>
+        <hr>
+        <p>Pug</p>
+        <div class="highlight highlight-text-jade"><pre><span class="pl-s1">- <span class="pl-k">var</span> authenticated <span class="pl-k">=</span> <span class="pl-c1">true</span></span>
+        body<span class="pl-c1">(</span><span class="pl-e">class</span>=authenticated <span class="pl-k">?</span> <span class="pl-s"><span class="pl-pds">'</span>authed<span class="pl-pds">'</span></span> <span class="pl-k">:</span> <span class="pl-s">'anon'</span><span class="pl-c1">)</span></pre></div>
+        <p>HTML</p>
+        <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">body</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>authed<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">body</span>&gt;</pre></div>
+        <hr>
+        <p>Pug</p>
+        <div class="highlight highlight-text-jade"><pre>input<span class="pl-c1">(</span>
+          <span class="pl-e">type</span>=<span class="pl-s">'checkbox'</span>
+          <span class="pl-e">name</span>=<span class="pl-s">'agreement'</span>
+          <span class="pl-e">checked</span>
+        <span class="pl-c1">)</span></pre></div>
+        <p>HTML</p>
+        <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">input</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>checkbox<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>agreement<span class="pl-pds">"</span></span> <span class="pl-e">checked</span>=<span class="pl-s"><span class="pl-pds">"</span>checked<span class="pl-pds">"</span></span> /&gt;</pre></div>
+        <hr>
+        <p>Pug</p>
+        <div class="highlight highlight-text-jade"><pre><span class="pl-s1">- <span class="pl-k">var</span> url <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>pug-test.html<span class="pl-pds">'</span></span>;</span>
+        a<span class="pl-c1">(</span><span class="pl-e">href</span>=<span class="pl-s">'/'</span> <span class="pl-k">+</span> url<span class="pl-c1">)</span> Link
+        |
+        |
+        <span class="pl-s1">- url <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>https://example.com/<span class="pl-pds">'</span></span></span>
+        a<span class="pl-c1">(</span><span class="pl-e">href</span>=url<span class="pl-c1">)</span> Another link</pre></div>
+        <p>HTML</p>
+        <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>/pug-test.html<span class="pl-pds">"</span></span>&gt;Link&lt;/<span class="pl-ent">a</span>&gt;
+        &lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>https://example.com/<span class="pl-pds">"</span></span>&gt;Another link&lt;/<span class="pl-ent">a</span>&gt;</pre></div>
+        <hr>
+        <p>Pug</p>
+        <div class="highlight highlight-text-jade"><pre><span class="pl-s1">- <span class="pl-k">var</span> classes <span class="pl-k">=</span> [<span class="pl-s"><span class="pl-pds">'</span>foo<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>bar<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>baz<span class="pl-pds">'</span></span>]</span>
+        a<span class="pl-c1">(</span><span class="pl-e">class</span>=classes<span class="pl-c1">)</span>
+        |
+        |
+        <span class="pl-c">//- the class attribute may also be repeated to merge arrays</span>
+        <span class="pl-c"></span>a<span class="pl-e">.bang</span><span class="pl-c1">(</span><span class="pl-e">class</span>=classes <span class="pl-e">class</span>=[<span class="pl-s"><span class="pl-pds">'</span>bing<span class="pl-pds">'</span></span>]<span class="pl-c1">)</span></pre></div>
+        <p>HTML</p>
+        <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">a</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>foo bar baz<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">a</span>&gt;
+        &lt;<span class="pl-ent">a</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>bang foo bar baz bing<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">a</span>&gt;</pre></div>
+        <h3><a id="user-content--констуркция-switch-case" class="anchor" aria-hidden="true" href="#-констуркция-switch-case"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a name="user-content-констуркция-switch-case"></a> Констуркция Switch Case</h3>
+        <p>Pug поддерживает switch case, которая представляет собой более наглядный способ сравнить выражение сразу с несколькими вариантами.</p>
+        <p>Pug</p>
+        <div class="highlight highlight-text-jade"><pre><span class="pl-s1">- <span class="pl-k">var</span> friends <span class="pl-k">=</span> <span class="pl-c1">10</span></span>
+        <span class="pl-k">case</span> friends
+          <span class="pl-k">when</span> <span class="pl-c1">0</span>
+            p you have no friends
+          <span class="pl-k">when</span> <span class="pl-c1">1</span>
+            p you have a friend
+          <span class="pl-k">default</span>
+            p you have <span class="pl-s">#{friends}</span> friends</pre></div>
+        <p>HTML</p>
+        <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">p</span>&gt;you have 10 friends&lt;/<span class="pl-ent">p</span>&gt;</pre></div>
+        <h3><a id="user-content--циклы" class="anchor" aria-hidden="true" href="#-циклы"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a name="user-content-циклы"></a> Циклы</h3>
+        <p>Pug</p>
+        <div class="highlight highlight-text-jade"><pre>ul
+          <span class="pl-k">each</span> val, index <span class="pl-k">in</span> [<span class="pl-s"><span class="pl-pds">'</span>zero<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>one<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>two<span class="pl-pds">'</span></span>]
+            li<span class="pl-s1"><span class="pl-c1">=</span> index <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">'</span>: <span class="pl-pds">'</span></span> <span class="pl-k">+</span> val</span></pre></div>
+        <p>HTML</p>
+        <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">ul</span>&gt;
+          &lt;<span class="pl-ent">li</span>&gt;0: zero&lt;/<span class="pl-ent">li</span>&gt;
+          &lt;<span class="pl-ent">li</span>&gt;1: one&lt;/<span class="pl-ent">li</span>&gt;
+          &lt;<span class="pl-ent">li</span>&gt;2: two&lt;/<span class="pl-ent">li</span>&gt;
+        &lt;/<span class="pl-ent">ul</span>&gt;</pre></div>
+        <hr>
+        <p>Pug</p>
+        <div class="highlight highlight-text-jade"><pre><span class="pl-s1">- <span class="pl-k">var</span> values <span class="pl-k">=</span> [];</span>
+        ul
+          <span class="pl-k">each</span> val <span class="pl-k">in</span> values
+            li<span class="pl-s1"><span class="pl-c1">=</span> val</span>
+          <span class="pl-k">else</span>
+            li There are no values</pre></div>
+        <p>HTML</p>
+        <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">ul</span>&gt;
+          &lt;<span class="pl-ent">li</span>&gt;There are no values&lt;/<span class="pl-ent">li</span>&gt;
+        &lt;/<span class="pl-ent">ul</span>&gt;</pre></div>
+        <hr>
+        <p>Pug</p>
+        <div class="highlight highlight-text-jade"><pre><span class="pl-s1">- <span class="pl-k">var</span> n <span class="pl-k">=</span> <span class="pl-c1">0</span>;</span>
+        ul
+          <span class="pl-k">while</span> n <span class="pl-k">&lt;</span> <span class="pl-c1">4</span>
+            li<span class="pl-s1"><span class="pl-c1">=</span> n<span class="pl-k">++</span></span></pre></div>
+        <p>HTML</p>
+        <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">ul</span>&gt;
+          &lt;<span class="pl-ent">li</span>&gt;0&lt;/<span class="pl-ent">li</span>&gt;
+          &lt;<span class="pl-ent">li</span>&gt;1&lt;/<span class="pl-ent">li</span>&gt;
+          &lt;<span class="pl-ent">li</span>&gt;2&lt;/<span class="pl-ent">li</span>&gt;
+          &lt;<span class="pl-ent">li</span>&gt;3&lt;/<span class="pl-ent">li</span>&gt;
+        &lt;/<span class="pl-ent">ul</span>&gt;</pre></div>
+        <h3><a id="user-content--вставка-javascript-кода" class="anchor" aria-hidden="true" href="#-вставка-javascript-кода"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a name="user-content-вставка-javascript-кода"></a> Вставка JavaScript кода</h3>
+        <p>Pug поддерживает вставку частей JavaScript кода в шаблоны.</p>
+        <p>Не буфферизированный код начинается с символа <code>-</code><br>
+        Pug</p>
+        <div class="highlight highlight-text-jade"><pre><span class="pl-s1">- <span class="pl-k">for</span> (<span class="pl-k">var</span> x <span class="pl-k">=</span> <span class="pl-c1">0</span>; x <span class="pl-k">&lt;</span> <span class="pl-c1">3</span>; x<span class="pl-k">++</span>)</span>
+          li item</pre></div>
+        <p>HTML</p>
+        <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">li</span>&gt;item&lt;/<span class="pl-ent">li</span>&gt;
+        &lt;<span class="pl-ent">li</span>&gt;item&lt;/<span class="pl-ent">li</span>&gt;
+        &lt;<span class="pl-ent">li</span>&gt;item&lt;/<span class="pl-ent">li</span>&gt;</pre></div>
+        <hr>
+        <p>Буфферизированный код начинается с символа <code>=</code><br>
+        Pug</p>
+        <div class="highlight highlight-text-jade"><pre>p
+          <span class="pl-s1"><span class="pl-c1">=</span> <span class="pl-s"><span class="pl-pds">'</span>This code is &lt;escaped&gt;!<span class="pl-pds">'</span></span></span></pre></div>
+        <p>HTML</p>
+        <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">p</span>&gt;This code is <span class="pl-c1">&amp;<span class="pl-en">lt</span>;</span>escaped<span class="pl-c1">&amp;<span class="pl-en">gt</span>;</span>!&lt;/<span class="pl-ent">p</span>&gt;</pre></div>
+        <h3><a id="user-content--комментарии" class="anchor" aria-hidden="true" href="#-комментарии"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a name="user-content-комментарии"></a> Комментарии</h3>
+        <p>Существуют различные комментариев: те, которые будут отображаться после компиляции, и те, которые пропадут.</p>
+        <p>Pug</p>
+        <div class="highlight highlight-text-jade"><pre><span class="pl-c">// just some paragraphs</span>
+        <span class="pl-c"></span><span class="pl-c">//- will not output within markup</span>
+        <span class="pl-c"></span>p foo
+        p bar</pre></div>
+        <p>HTML</p>
+        <div class="highlight highlight-text-html-basic"><pre><span class="pl-c"><span class="pl-c">&lt;!--</span> just some paragraphs<span class="pl-c">--&gt;</span></span>
+        &lt;<span class="pl-ent">p</span>&gt;foo&lt;/<span class="pl-ent">p</span>&gt;
+        &lt;<span class="pl-ent">p</span>&gt;bar&lt;/<span class="pl-ent">p</span>&gt;</pre></div>
+        <hr>
+        <p>Pug</p>
+        <div class="highlight highlight-text-jade"><pre>body
+        <span class="pl-c">  //-</span>
+        <span class="pl-c">    Comments for your template writers.</span>
+        <span class="pl-c">    Use as much text as you want.</span>
+        <span class="pl-c"></span><span class="pl-c">  //</span>
+        <span class="pl-c">    Comments for your HTML readers.</span>
+        <span class="pl-c">    Use as much text as you want.</span></pre></div>
+        <p>HTML</p>
+        <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">body</span>&gt;
+          <span class="pl-c"><span class="pl-c">&lt;!--</span>Comments for your HTML readers.</span>
+        <span class="pl-c">Use as much text as you want.<span class="pl-c">--&gt;</span></span>
+        &lt;/<span class="pl-ent">body</span>&gt;</pre></div>
+        <h3><a id="user-content--условия" class="anchor" aria-hidden="true" href="#-условия"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a name="user-content-условия"></a> Условия</h3>
+        <p>Pug</p>
+        <div class="highlight highlight-text-jade"><pre><span class="pl-s1">- <span class="pl-k">var</span> user <span class="pl-k">=</span> { description<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>foo bar baz<span class="pl-pds">'</span></span> }</span>
+        <span class="pl-s1">- <span class="pl-k">var</span> authorised <span class="pl-k">=</span> <span class="pl-c1">false</span></span>
+        <span class="pl-e">#user</span>
+          <span class="pl-k">if</span> <span class="pl-smi">user</span>.<span class="pl-c1">description</span>
+            h2<span class="pl-e">.green</span> Description
+            p<span class="pl-e">.description</span><span class="pl-s1"><span class="pl-c1">=</span> <span class="pl-smi">user</span>.<span class="pl-c1">description</span></span>
+          <span class="pl-k">else if</span> authorised
+            h2<span class="pl-e">.blue</span> Description
+            p<span class="pl-e">.description</span>.
+              User has no description,
+              why not add one...
+          <span class="pl-k">else</span>
+            h2<span class="pl-e">.red</span> Description
+            p<span class="pl-e">.description</span> User has no description</pre></div>
+        <p>HTML</p>
+        <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>user<span class="pl-pds">"</span></span>&gt;
+          &lt;<span class="pl-ent">h2</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>green<span class="pl-pds">"</span></span>&gt;Description&lt;/<span class="pl-ent">h2</span>&gt;
+          &lt;<span class="pl-ent">p</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>description<span class="pl-pds">"</span></span>&gt;foo bar baz&lt;/<span class="pl-ent">p</span>&gt;
+        &lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+        <h3><a id="user-content--тип-документа" class="anchor" aria-hidden="true" href="#-тип-документа"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a name="user-content-тип-документа"></a> Тип документа</h3>
+        <p>Pug</p>
+        <div class="highlight highlight-text-jade"><pre>doctype html</pre></div>
+        <p>HTML</p>
+        <div class="highlight highlight-text-html-basic"><pre>&lt;!DOCTYPE html&gt;</pre></div>
+        <h3><a id="user-content--инклюды-includes" class="anchor" aria-hidden="true" href="#-инклюды-includes"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a name="user-content-инклюды"></a> Инклюды (Includes)</h3>
+        <p>Pug имеет возможность вставки содержимого одного файла в другой файл Pug.</p>
+        <p>Pug</p>
+        <div class="highlight highlight-text-jade"><pre><span class="pl-c">//- index.pug</span>
+        <span class="pl-c"></span>doctype html
+        html
+          head
+            style
+              <span class="pl-k">include</span> <span class="pl-v">style.css</span>
+          body
+            h1 My Site
+            p Welcome to my super lame site.
+            script
+              <span class="pl-k">include</span> <span class="pl-v">script.js</span></pre></div>
+        <p>CSS</p>
+        <div class="highlight highlight-source-css"><pre><span class="pl-c"><span class="pl-c">/*</span> style.css <span class="pl-c">*/</span></span>
+        <span class="pl-ent">h1</span> {
+          <span class="pl-c1"><span class="pl-c1">color</span></span>: <span class="pl-c1">red</span>;
+        }</pre></div>
+        <p>JavaScript</p>
+        <div class="highlight highlight-source-js"><pre><span class="pl-c"><span class="pl-c">//</span> script.js</span>
+        <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">'</span>You are awesome<span class="pl-pds">'</span></span>);</pre></div>
+        <p>HTML</p>
+        <div class="highlight highlight-text-html-basic"><pre>&lt;!DOCTYPE html&gt;
+        &lt;<span class="pl-ent">html</span>&gt;
+        &lt;<span class="pl-ent">head</span>&gt;
+          &lt;<span class="pl-ent">style</span>&gt;<span class="pl-s1"></span>
+        <span class="pl-s1">    <span class="pl-c"><span class="pl-c">/*</span> style.css <span class="pl-c">*/</span></span></span>
+        <span class="pl-s1">    <span class="pl-ent">h1</span> {</span>
+        <span class="pl-s1">      <span class="pl-c1"><span class="pl-c1">color</span></span>: <span class="pl-c1">red</span>;</span>
+        <span class="pl-s1">    }</span>
+        <span class="pl-s1">  </span>&lt;/<span class="pl-ent">style</span>&gt;
+        &lt;/<span class="pl-ent">head</span>&gt;
+        &lt;<span class="pl-ent">body</span>&gt;
+          &lt;<span class="pl-ent">h1</span>&gt;My Site&lt;/<span class="pl-ent">h1</span>&gt;
+          &lt;<span class="pl-ent">p</span>&gt;Welcome to my super lame site.&lt;/<span class="pl-ent">p</span>&gt;
+          &lt;<span class="pl-ent">script</span>&gt;<span class="pl-s1"></span>
+        <span class="pl-s1">    <span class="pl-c"><span class="pl-c">//</span> script.js</span></span>
+        <span class="pl-s1">    <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">'</span>You are awesome<span class="pl-pds">'</span></span>);</span>
+        <span class="pl-s1">  </span>&lt;/<span class="pl-ent">script</span>&gt;
+        &lt;/<span class="pl-ent">body</span>&gt;
+        &lt;/<span class="pl-ent">html</span>&gt;</pre></div>
+        <h3><a id="user-content--наследование-шаблонов" class="anchor" aria-hidden="true" href="#-наследование-шаблонов"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a name="user-content-наследование-шаблонов"></a> Наследование шаблонов</h3>
+        <p>Pug поддерживает наследование шаблонов. Наследование шаблонов работает через ключевые слова <code>block</code> и <code>extend</code>. В шаблоне <code>block</code> - обычный блок Pug, который может заменить дочерний шаблон. Этот процесс является рекурсивным.</p>
+        <p>Pug</p>
+        <div class="highlight highlight-text-jade"><pre><span class="pl-c">//- base.pug</span>
+        <span class="pl-c"></span>html
+          head
+            title My Site 
+            <span class="pl-k">block</span> <span class="pl-v">scripts</span>
+              script<span class="pl-c1">(</span><span class="pl-e">src</span>=<span class="pl-s">'/jquery.js'</span><span class="pl-c1">)</span>
+          body
+            <span class="pl-k">block</span> <span class="pl-v">content</span>
+            <span class="pl-k">block</span> <span class="pl-v">foot</span>
+              <span class="pl-e">#footer</span>
+                p some footer content
+                
+        <span class="pl-c">//- home.pug</span>
+        <span class="pl-c"></span><span class="pl-k">extends</span> <span class="pl-v">base.pug</span>
+        <span class="pl-s1">- <span class="pl-k">var</span> title <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>Animals<span class="pl-pds">'</span></span></span>
+        <span class="pl-s1">- <span class="pl-k">var</span> pets <span class="pl-k">=</span> [<span class="pl-s"><span class="pl-pds">'</span>cat<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>dog<span class="pl-pds">'</span></span>]</span>
+        <span class="pl-k">block</span> <span class="pl-v">content</span>
+          h1<span class="pl-s1"><span class="pl-c1">=</span> title <span class="pl-c"><span class="pl-c">//</span> - or #{title} without =</span></span>
+          <span class="pl-k">each</span> petName <span class="pl-k">in</span> pets
+            p<span class="pl-s1"><span class="pl-c1">=</span> petName <span class="pl-c"><span class="pl-c">//</span> -or #{petName} without =</span></span></pre></div>
+        <p>HTML</p>
+        <div class="highlight highlight-text-html-basic"><pre>&lt;!DOCTYPE html&gt;
+        &lt;<span class="pl-ent">html</span>&gt;
+        &lt;<span class="pl-ent">head</span>&gt;
+          &lt;<span class="pl-ent">title</span>&gt;My site&lt;/<span class="pl-ent">title</span>&gt;
+          &lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">'</span>/jquery.js<span class="pl-pds">'</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+        &lt;/<span class="pl-ent">head</span>&gt;
+        &lt;<span class="pl-ent">body</span>&gt;
+          &lt;<span class="pl-ent">h1</span>&gt;Animals&lt;/<span class="pl-ent">h1</span>&gt;
+          &lt;<span class="pl-ent">p</span>&gt;cat&lt;/<span class="pl-ent">p</span>&gt;
+          &lt;<span class="pl-ent">p</span>&gt;dog&lt;/<span class="pl-ent">p</span>&gt;
+          &lt;<span class="pl-ent">div</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">'</span>footer<span class="pl-pds">'</span></span>&gt;
+            &lt;<span class="pl-ent">p</span>&gt;some footer content&lt;/<span class="pl-ent">p</span>&gt;
+          &lt;/<span class="pl-ent">div</span>&gt;
+        &lt;/<span class="pl-ent">body</span>&gt;
+        &lt;/<span class="pl-ent">html</span>&gt;</pre></div>
+        <h3><a id="user-content--интерполяция-переменных" class="anchor" aria-hidden="true" href="#-интерполяция-переменных"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a name="user-content-интерполяция-переменных"></a> Интерполяция переменных</h3>
+        <p>Pug предоставляет различные способы вывода переменных.</p>
+        <p>Pug</p>
+        <div class="highlight highlight-text-jade"><pre><span class="pl-s1">- <span class="pl-k">var</span> title <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>On Dogs: Man's Best Friend<span class="pl-pds">"</span></span>;</span>
+        <span class="pl-s1">- <span class="pl-k">var</span> author <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>enlore<span class="pl-pds">"</span></span>;</span>
+        <span class="pl-s1">- <span class="pl-k">var</span> theGreat <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>&lt;span&gt;escape!&lt;/span&gt;<span class="pl-pds">"</span></span>;</span>
+        
+        h1<span class="pl-s1"><span class="pl-c1">=</span> title</span>
+        p Written with love by <span class="pl-s">#{author}</span>
+        p This will be safe: <span class="pl-s">!{theGreat}</span></pre></div>
+        <p>HTML</p>
+        <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">h1</span>&gt;On Dogs: Man's Best Friend&lt;/<span class="pl-ent">h1</span>&gt;
+        &lt;<span class="pl-ent">p</span>&gt;Written with love by enlore&lt;/<span class="pl-ent">p</span>&gt;
+        &lt;<span class="pl-ent">p</span>&gt;This will be safe: &lt;<span class="pl-ent">span</span>&gt;escape!&lt;/<span class="pl-ent">span</span>&gt;&lt;/<span class="pl-ent">p</span>&gt;</pre></div>
+        <h3><a id="user-content--миксины" class="anchor" aria-hidden="true" href="#-миксины"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a name="user-content-миксины"></a> Миксины</h3>
+        <p>Поддержка миксинов позволяет создавать переиспользуемые блоки.</p>
+        <p>Pug</p>
+        <div class="highlight highlight-text-jade"><pre><span class="pl-c">//- Declaration</span>
+        <span class="pl-c"></span><span class="pl-k">mixin </span>pet(<span class="pl-smi">name</span>)
+          li<span class="pl-e">.pet</span><span class="pl-s1"><span class="pl-c1">=</span> name</span>
+        <span class="pl-c">//- use</span>
+        <span class="pl-c"></span>ul
+          <span class="pl-k">+</span>pet(<span class="pl-s">'cat'</span>)
+          <span class="pl-k">+</span>pet(<span class="pl-s">'dog'</span>)
+          <span class="pl-k">+</span>pet(<span class="pl-s">'pig'</span>)</pre></div>
+        <p>HTML</p>
+        <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">ul</span>&gt;
+          &lt;<span class="pl-ent">li</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>pet<span class="pl-pds">"</span></span>&gt;cat&lt;/<span class="pl-ent">li</span>&gt;
+          &lt;<span class="pl-ent">li</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>pet<span class="pl-pds">"</span></span>&gt;dog&lt;/<span class="pl-ent">li</span>&gt;
+          &lt;<span class="pl-ent">li</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>pet<span class="pl-pds">"</span></span>&gt;pig&lt;/<span class="pl-ent">li</span>&gt;
+        &lt;/<span class="pl-ent">ul</span>&gt;</pre></div>
+        <hr>
+        <p>Pug</p>
+        <div class="highlight highlight-text-jade"><pre><span class="pl-k">mixin </span>article(<span class="pl-smi">title</span>)
+          <span class="pl-e">.article</span>
+            <span class="pl-e">.article-wrapper</span>
+              h1<span class="pl-s1"><span class="pl-c1">=</span> title</span>
+              <span class="pl-k">if</span> block
+                <span class="pl-k">block</span>
+              <span class="pl-k">else</span>
+                p No content provided
+        
+        <span class="pl-k">+</span>article(<span class="pl-s">'Hello world'</span>)
+        
+        <span class="pl-k">+</span>article(<span class="pl-s">'Hello world'</span>)
+          p This is my
+          p Amazing article</pre></div>
+        <p>HTML</p>
+        <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>article<span class="pl-pds">"</span></span>&gt;
+          &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>article-wrapper<span class="pl-pds">"</span></span>&gt;
+            &lt;<span class="pl-ent">h1</span>&gt;Hello world&lt;/<span class="pl-ent">h1</span>&gt;
+            &lt;<span class="pl-ent">p</span>&gt;No content provided&lt;/<span class="pl-ent">p</span>&gt;
+          &lt;/<span class="pl-ent">div</span>&gt;
+        &lt;/<span class="pl-ent">div</span>&gt;
+        &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>article<span class="pl-pds">"</span></span>&gt;
+          &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>article-wrapper<span class="pl-pds">"</span></span>&gt;
+            &lt;<span class="pl-ent">h1</span>&gt;Hello world&lt;/<span class="pl-ent">h1</span>&gt;
+            &lt;<span class="pl-ent">p</span>&gt;This is my&lt;/<span class="pl-ent">p</span>&gt;
+            &lt;<span class="pl-ent">p</span>&gt;Amazing article&lt;/<span class="pl-ent">p</span>&gt;
+          &lt;/<span class="pl-ent">div</span>&gt;
+        &lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+        <hr>
+        <p>Pug</p>
+        <div class="highlight highlight-text-jade"><pre><span class="pl-k">mixin </span>link(<span class="pl-smi">href, name</span>)
+        <span class="pl-c">  //- attributes == {class: "btn"}</span>
+        <span class="pl-c"></span>  a<span class="pl-c1">(</span><span class="pl-e">class</span>!=<span class="pl-smi">attributes</span>.<span class="pl-smi">class</span> <span class="pl-e">href</span>=href<span class="pl-c1">)</span><span class="pl-s1"><span class="pl-c1">=</span> name</span>
+        
+        <span class="pl-k">+</span>link(<span class="pl-s">'/foo'</span>, <span class="pl-s">'foo'</span>)<span class="pl-c1">(</span><span class="pl-e">class</span>=<span class="pl-s">"btn"</span><span class="pl-c1">)</span></pre></div>
+        <p>HTML</p>
+        <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">a</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>btn<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>/foo<span class="pl-pds">"</span></span>&gt;foo&lt;/<span class="pl-ent">a</span>&gt;</pre></div>
+        <h3><a id="user-content--многострочный-ассоциативный-массив" class="anchor" aria-hidden="true" href="#-многострочный-ассоциативный-массив"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a name="user-content-ассоциативный-массив"></a> Многострочный ассоциативный массив</h3>
+        <p>Pug</p>
+        <div class="highlight highlight-text-jade"><pre><span class="pl-s1">-</span>
+        <span class="pl-s1">  <span class="pl-k">var</span> priceItem <span class="pl-k">=</span> [</span>
+        <span class="pl-s1">    {include<span class="pl-k">:</span> filterInc, parameter <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>Розовый фильтр<span class="pl-pds">"</span></span>},</span>
+        <span class="pl-s1">    {include<span class="pl-k">:</span> smileInc, parameter <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>Смайлики<span class="pl-pds">"</span></span>},</span>
+        <span class="pl-s1">    {include<span class="pl-k">:</span> commentInc, parameter <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>Комментарии<span class="pl-pds">"</span></span>}</span>
+        <span class="pl-s1">  ]</span></pre></div>
+        </article>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- End jade-content-->
+  <!-- Cookie-->
+  <div role="status" class="cookie">
+    <div class="cookie__content">
+      <p class="cookie__content_text f1-L">Этот сайт использует файлы cookies для более комфортной работы пользователя. Продолжая просмотр страниц сайта, вы соглашаетесь с использованием  файлов cookies. Если вам нужна дополнительная информация, пожалуйста, посетите страницу <a href="#" class="cookie__content_link">"Политика конфиденциальности".</a></p>
+      <div class="cookie__content_close"><img src="" alt="close icon" class="cookie__content_close-img"/></div>
+    </div>
+  </div>
+  <!-- End cookie-->
+  <!-- Footer-->
+  <footer role="contentinfo" class="site-footer">
+    <div class="bottom-line">
+      <div class="container">
+        <div class="bottom-line__content">
+          <h2 class="bottom-line__content_h2 h2">База знаний</h2>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End footer-->
+  <!-- JS and CSS-->
+  <noscript><link href="css/style.css" rel="stylesheet"></noscript>
+  <script>(function(w, d){var b = d.getElementsByTagName('body')[0];var s = d.createElement("script"); var v = !("IntersectionObserver" in w) ? "8.17.0" : "10.19.0";s.async = true;s.src = "https://cdn.jsdelivr.net/npm/vanilla-lazyload@" + v + "/dist/lazyload.min.js";w.lazyLoadOptions = {/* Your options here */ threshold: 300, elements_selector: ".lazy", to_webp: true };b.appendChild(s);}(window, document));</script>
+  <script src="js/scripts.js" async="async"></script>
+  <!-- End JS and CSS-->
+</body>
+<html/>

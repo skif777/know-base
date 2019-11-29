@@ -1,0 +1,85 @@
+//- Шаблон
+extends ../../layout-jade/layout
+
+//- Переменные 
+block variables
+	- var title = 'Теги HTML5'
+	- var site = 'site.ru'
+	- var link = 'https://my-site.ru'
+	- var description = 'Описание страницы'
+	- var siteName = 'site name'
+	- var keywords = 'Кючевые слова'
+	- var body = 'is-tags'
+
+//- Контент
+block content-page
+	// tags-content
+	main(class="tags-content", role="main")
+		section(class="tags")
+			.container 
+				.tags__content
+					p Графика
+					ul
+						li < canvas>< /canvas> - холст-контейнер для динамического отображения изображений			inline-block
+
+					p Ссылки
+						ul 
+							li < a>< /a> - гиперссылка	inline
+
+					p Списки
+					ul
+						li < ul>< /ul> - маркированный список				block
+						li < li>< /li> - элемент списка					list-item
+						li < dl>< /dl> - контейнер для термина и его описания		block
+						li < ol>< /ol> - упорядоченный нумерованный список		block
+						li < dt>< /dt> - задаёт термин					block
+						li < dd>< /dd> - расшифровывает термин				block
+
+					p Группировка контента
+					ul
+						li < body>< /body> - тело html-документа								block
+						li < div>< /div> -  контейнер для разделов html-документа, группирует блочные элементы		block
+						li < span>< /span>	 - контейнер для строчных элементов						inline
+						li < header>< /header> - секция для вводной информации сайта или группы навигационных ссылок		block
+						li < footer>< /footer> - секция для нижнего колонтитула документа или раздела				block
+						li < section>< /section> - логическая область (раздел) страницы, обычно с заголовком			block
+						li < article>< /article> - раздел контента, образующий независимую часть документа или сайта		block
+						li < aside>< /aside>	 - контент страницы, имеющий косвенное отношение к основному контенту		block
+						li < nav>< /nav>	 - раздел документа, содержащий навигационные ссылки по сайту			block
+						li < figure>< /figure> - независимый контейнер для такого контента как изображения, диаграммы и т.п.	block
+						li < figcaption>< /figcaption> - заголовок для элемента < figure>							block
+						li < details>< /details> - контейнер с дополнительными сведениями, который можно открыть или закрыть	block
+						li < summary>< /summary> - видимый заголовок для элемента < details>					- block
+						li < main>< /main>	 - контейнер для уникального основного содержимого в пределах одной страницы сайта	block
+
+					p Формы
+					ul
+						li < form>< /form>	- html-форма									block
+						li < input>		 - многофункциональные поля формы							inline-block
+						li < textarea>	 - многострочное поле формы							inline-block
+						li < label>< /label>	 - текстовая метка для элемента < input>						inline
+						li < datalist>< /datalist> - контейнер для выпадающего списка элемента < input> с < option>-значениями		none
+						li < select>< /select> - элемент управления с выбором значений из предложенных вариантов < option>	inline-block
+						li < optgroup>< /optgroup> - контейнер с заголовком для группы элементов < option>				block
+						li < option>< /option> - вариант (опция) в раскрывающемся списке						block
+						li < fieldset>< /fieldset> - группирует связанные элементы в форме						block
+						li < legend>< /legend> - заголовок элементов формы, сгруппированных с помощью < fieldset>			block
+						li < button>< /button> - интерактивная кнопка								inline-block
+						li < keygen> генерирует закрытый и открытый ключи						inline-block
+						li < progress>< /progress> - индикатор выполнения задачи							inline-block
+						li < meter>< /meter>	 - индикатор измерения в заданном диапазоне					inline-block
+						li < output>< /output> - поле для вывода результата вычисления						inline
+
+					p Встраиваемый контент
+					ul
+						li < audio>< /audio>	- добавляет аудио-файлы								inline-block
+						li < video>< /video>	- добавляет видео-файлы								inline-block
+						li < source>	- указывает местоположение и тип альтернативных файлов для < audio> и < video>	none
+						li < track>	- субтитры для элементов < audio> и < video>					none
+						li < embed>	- встраивает внешний интерактивный контент или плагин				inline-block
+						li < object>< /object>	- контейнер для встраивания мультимедиа						inline-block
+						li < param>	- задаёт параметры для плагинов, встраиваемых с помощью элемента < object>		none
+						li < iframe>< /iframe> - создаёт встроенный фрейм							block 
+
+	// End tags-content
+

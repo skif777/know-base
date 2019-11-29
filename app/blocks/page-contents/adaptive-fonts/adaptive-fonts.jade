@@ -1,0 +1,29 @@
+//- Шаблон
+extends ../../layout-jade/layout
+
+//- Переменные 
+block variables
+	- var title = 'Адаптивный шрифт'
+	- var site = 'site.ru'
+	- var link = 'https://my-site.ru'
+	- var description = 'Описание страницы'
+	- var siteName = 'site name'
+	- var keywords = 'Кючевые слова'
+	- var body = 'is-adaptive-fonts'
+
+//- Контент
+block content-page
+	// adaptive-fonts-content
+	main(class="adaptive-fonts-content", role="main")
+		section.adaptive-fonts
+			.container 
+				.adaptive-fonts__content 
+					h4 Формула вычислени шрифта
+					p font-size: calc( 24px + 24 * (100vw - 320px) / (960 - 320) );
+					i.d-block font-size: calc( мин. размер шрифта + остаток контр. точек * (100vw - 320px) / (макс. размер контейнера - мин. размер контейнера) );
+					i При отрицательном наклоне нужно инвертировать контрольные точки
+					h4.mt-5 Формула вычислени межстрочного интервала
+					p line-height: calc( 140% + 6.4 * (100vw - 960px) / (320 - 960) );
+
+	// End adaptive-fonts-content
+

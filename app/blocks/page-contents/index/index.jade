@@ -1,0 +1,130 @@
+//- Шаблон
+extends ../../layout-jade/layout
+
+//- Переменные 
+block variables
+	- var title = 'Главная'
+	- var site = 'site.ru'
+	- var link = 'https://my-site.ru'
+	- var description = 'Описание страницы'
+	- var siteName = 'site name'
+	- var keywords = 'Кючевые слова'
+	- var body = 'is-home'
+
+//- Контент
+block content-page
+	// Homepage-content
+	main(class="homepage-content", role="main")
+		//- Grids
+		section.nav
+			.container
+				.nav__content 
+					.row
+						div(class="col-lg-4")
+							.nav__block
+								h4(class="nav__block_name") Верстка
+								ul.nav__block_container
+									li.nav__block_list
+										a(href="../app/structure_code.html" class="nav__block_link") Структура кода
+									li.nav__block_list
+										a(href="../app/semantics.html" class="nav__block_link") Семантика HTML5
+									li.nav__block_list
+										a(href="../app/tags.html" class="nav__block_link") Теги HTML5
+									li.nav__block_list
+										a(href="../app/jade.html" class="nav__block_link") Jade или Pug
+									li.nav__block_list
+										a(href="../app/hyphenation.html" class="nav__block_link") Перенос слов
+									li.nav__block_list
+										a(href="../app/icon-pack.html" class="nav__block_link") Создание шрифтового icon pack
+									li.nav__block_list
+										a(href="../app/schema.html" class="nav__block_link") Микроразметка Schema org
+									li.nav__block_list
+										a(href="../app/opengraph.html" class="nav__block_link") Микроразметка Open Graph
+									li.nav__block_list
+										a(href="../app/retina.html" class="nav__block_link") Оптимизация под retina
+									li.nav__block_list
+										a(href="../app/fonts.html" class="nav__block_link") Загрузка веб-шрифтов
+									li.nav__block_list
+										a(href="../app/adaptive-fonts.html" class="nav__block_link") Адаптивный шрифт
+									li.nav__block_list
+										a(href="../app/svg.html" class="nav__block_link") SVG графика
+									li.nav__block_list
+										a(href="../app/critical-css.html" class="nav__block_link") Критический CSS
+									li.nav__block_list
+										a(href="../app/bootstrap4.html" class="nav__block_link") Bootstrap 4
+									li.nav__block_list
+										a(href="../app/mobile-first.html" class="nav__block_link") Mobile first
+									li.nav__block_list
+										a(href="../app/favicon.html" class="nav__block_link") Добавление Favicon
+						div(class="col-lg-4")
+							.nav__block
+								h4(class="nav__block_name") CSS
+								ul
+									li.nav__block_list
+										a(href="../app/center-css.html" class="nav__block_link") Выравнивание по центру
+									li.nav__block_list
+										a(href="../app/box-shadow.html" class="nav__block_link") Тень (box-shadow)
+									li.nav__block_list
+										a(href="../app/flex-box.html" class="nav__block_link") Flex box
+									li.nav__block_list
+										a(href="../app/animation-css.html" class="nav__block_link") Анимация CSS
+									li.nav__block_list
+										a(href="../app/css-selectors.html" class="nav__block_link") Селекторы CSS
+						div(class="col-lg-4")
+							.nav__block
+								h4(class="nav__block_name") Софт
+								ul
+									li.nav__block_list
+										a(href="../app/text-editors.html" class="nav__block_link") Текстовые редакторы
+									li.nav__block_list
+										a(href="../app/software.html" class="nav__block_link") Программное обеспечение
+									li.nav__block_list
+										a(href="#" class="nav__block_link") punkt menu
+					div(class="row mt-5")
+						div(class="col-lg-4")
+							.nav__block
+								h4(class="nav__block_name") Элементы верстки
+								ul
+									li.nav__block_list
+										a(href="../app/elements/multi-level-menu/multi-level-menu.html" class="nav__block_link") Многоуровневое меню
+									li.nav__block_list
+										a(href="../app/box-shadow.html" class="nav__block_link") 2
+									li.nav__block_list
+										a(href="../app/gulp.html" class="nav__block_link") 3
+						div(class="col-lg-4")
+							.nav__block
+								h4(class="nav__block_name") Другое
+								ul
+									li.nav__block_list
+										a(href="../app/github.html" class="nav__block_link") Git hub команды
+									li.nav__block_list
+										a(href="../app/gulp.html" class="nav__block_link") Gulp
+									li.nav__block_list
+										a(href="../app/yarn.html" class="nav__block_link") Команды yarn
+									li.nav__block_list
+										a(href="../app/emmet.html" class="nav__block_link") Команды Emmet
+						div(class="col-lg-4")
+							.nav__block
+								h4(class="nav__block_name") WordPress
+								ul
+									li.nav__block_list
+										a(href="../app/wp-rules.html" class="nav__block_link") Правила разработки
+									li.nav__block_list
+										a(href="../app/useful-sites.html" class="nav__block_link") Полезные сайты
+									li.nav__block_list
+										a(href="../app/woocommerce.html" class="nav__block_link") Woocommerce
+						div(class="col-lg-4")
+							.nav__block
+								h4(class="nav__block_name") JavaScript
+								ul
+									li.nav__block_list
+										a(href="../app/rules-js.html" class="nav__block_link") Правила
+						div(class="col-lg-4")
+							.nav__block
+								h4(class="nav__block_name") Jquery
+								ul
+									li.nav__block_list
+										a(href="../app/rules-jquery.html" class="nav__block_link") Правила
+		
+	// End homepage-content
+

@@ -1,0 +1,91 @@
+//- Шаблон
+extends ../../layout-jade/layout
+
+//- Переменные 
+block variables
+  - var title = 'Добавление favicon'
+  - var site = 'site.ru'
+  - var link = 'https://my-site.ru'
+  - var description = 'Описание страницы'
+  - var siteName = 'site name'
+  - var keywords = 'Кючевые слова'
+  - var body = 'is-favicon'
+
+//- Контент
+block content-page
+  // favicon-content
+  main(class="favicon-content", role="main")
+    section.favicon
+      .container
+        .favicon__content 
+          p(class="mb-5") по материалам статьи Ruadhán O’Donoghue
+            a(href="https://webformyself.com/dobavlenie-ikonok-dlya-sajta-v-multibrauzernom-i-multipplatformennom-mire/")  Подробнее
+          h4 1. Собрать иконки
+          ul 
+            li favicon.ico
+            li favicon-16.png
+            li favicon-32.png
+            li icon-48.png
+            li icon-96.png
+            li icon-144.png
+            li icon-192.png
+            li icon-256.png
+            li icon-384.png
+            li icon-512.png
+            li apple-touch-icon-57.png
+            li apple-touch-icon-60.png
+            li apple-touch-icon-72.png
+            li apple-touch-icon-76.png
+            li apple-touch-icon-114.png
+            li apple-touch-icon-120.png
+            li apple-touch-icon-152.png
+            li apple-touch-icon-167.png
+            li apple-touch-icon-180.png
+            li ms-tile-144.png
+            li ms-tile-126.png
+            li ms-tile-270.png
+            li ms-tile-558×270.png
+            li ms-tile-558.png
+          h4 2. Добавить конфигурационные файлы
+          ul 
+            li manifest.json
+            li browserconfig.xml
+          h4 3. Подключить эти файлы через < link> в < head>
+          ul 
+            li < link rel="manifest" href="/manifest.json">
+            li 
+              i Edge и IE11 автоматически запрашивает файл browserconfig.xml. Однако конфиг файл можно явно предоставить следующим образом, что позволяет изменить его имя и путь
+            li < meta name="msapplication-config" content="/path/to/config-file.xml" />
+          h4 4. Добавить разметку в head 
+          ul 
+            li < link rel="icon" sizes="48x48" href="icon-48.png">
+            li < link rel="icon" sizes="96x96" href="icon-96.png">
+            li < link rel="icon" sizes="144x144" href="icon-144.png">
+            li < link rel="icon" sizes="192x192" href="icon-192.png">
+            li < link rel="icon" sizes="256x256" href="icon-256.png">
+            li < link rel="icon" sizes="384x384" href="icon-384.png">
+            li < link rel="icon" sizes="512x512" href="icon-512.png">
+            li < link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57.png">
+            li < link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60.png">
+            li < link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72.png">
+            li < link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76.png">
+            li < link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114.png">
+            li < link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120.png">
+            li < link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152.png">
+            li < link rel="apple-touch-icon" sizes="167x167" href="apple-touch-icon-167.png">
+            li < link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180.png">
+            li < link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff0000">
+            li < meta name="msapplication-TileColor" content="#ff0000">
+            li < meta name="msapplication-TileImage" content="/ms-tile-144.png">
+            li < link rel="manifest" href="/manifest.json">
+          h4 SVG favicon
+          ul 
+            li Чтобы использовать favicon SVG, атрибут sizes необходимо установить в значение any:
+            li < link rel="icon" href="icon.svg" sizes="any" type="image/svg+xml">
+          h4 Комментарии 
+          ul 
+            li в разных браузерах по разному отображается favicon, поэтому нужно проверять рендер favicon на всех платформах 
+
+
+  // End favicon-content
+

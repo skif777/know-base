@@ -1,0 +1,41 @@
+//- Шаблон
+extends ../../layout-jade/layout
+
+//- Переменные 
+block variables
+	- var title = 'Команды yarn'
+	- var site = 'site.ru'
+	- var link = 'https://my-site.ru'
+	- var description = 'Описание страницы'
+	- var siteName = 'site name'
+	- var keywords = 'Кючевые слова'
+	- var body = 'is-yarn'
+
+//- Контент
+block content-page
+	// yarn-content
+	main(class="yarn-content", role="main")
+		section.yarn 
+			.container 
+				.yarn__content
+					ul
+						li yarn init -*y - инициировать проект *с ответом "да" на все вопросы
+						li yarn --version - отобразить версию yarn'а
+						li yarn *install - уставить все пакеты и зависимости
+						li yarn *run [название скрипта] - запуск скрипта
+						li yarn add [навзание пакетов]*@[версия] --*offline - установить пакеты *определенной версии *офлайн
+						li yarn remove [название пакетов]*@[версия] - удалить пакеты *определенной версии
+						li yarn check - проверяет, что зависимости в package.json совпадают с зависимостями в файле yarn.lock
+						li yarn list --depth=[уровень] - вывести список установленных пакетов
+						li yarn list --pattern [название пакетов] - отбразить версию пакетов 
+						li yarn upgrade --*latest - полностью удалить и установить все пакеты *до последней версии
+					p Ключи для комманд add, remove и upgrade:
+					ul
+						li global - установить, удалить и обновить пакет глобально
+						li --dev - установить, удалить и обновить пакет в зависимость devDependencies
+						li --peer - установить, удалить и обновить пакет в зависимость peerDependencies
+						li --optional - установить, удалить и обновить пакет в зависимость optionalDependencies
+				a(href="https://yarnpkg.com/ru/docs/cli/") подробнее
+
+	// End yarn-content
+

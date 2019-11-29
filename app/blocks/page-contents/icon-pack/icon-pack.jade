@@ -1,0 +1,27 @@
+//- Шаблон
+extends ../../layout-jade/layout
+
+//- Переменные 
+block variables
+	- var title = 'Создание шрифтового icon-pack'
+	- var site = 'site.ru'
+	- var link = 'https://my-site.ru'
+	- var description = 'Описание страницы'
+	- var siteName = 'site name'
+	- var keywords = 'Кючевые слова'
+	- var body = 'is-icon-pack'
+
+//- Контент
+block content-page
+	// icon-pack-content
+	main(class="icon-pack-content", role="main")
+		section.icon-pack
+			.container 
+				.icon-pack__content
+					h4 Создание шрифтового icon-pack
+					ul 
+						li получить иконки в формате SVG
+						li обработать на сайте icomoon.io
+						li скачать и подключить
+	// End icon-pack-content
+
