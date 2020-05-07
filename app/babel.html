@@ -11,7 +11,7 @@
   <meta name="keywords" content="Кючевые слова"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <!-- Open Graph-->
-  <meta property="og:title" content="Правила JavaSripts"/>
+  <meta property="og:title" content="Команды babel"/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="site.ru"/>
   <meta property="og:image" content="img/OpenGraph/og-image.jpg"/>
@@ -20,7 +20,7 @@
   <meta property="og:site_name" content="site name"/>
   <meta property="og:locale" content="ru_RU"/>
   <!-- Заголовок-->
-  <title>Правила JavaSripts</title>
+  <title>Команды babel</title>
   <!-- Manifest-->
   <link rel="manifest" href="site.webmanifest"/>
   <!-- Canonical-->
@@ -58,7 +58,7 @@
   <link href="css/style.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
   <script>!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);</script>
 </head>
-<body class="is-rules-js">
+<body class="is-babel">
   <!-- [if lte IE 9]
   <p class="browserupgrade", role="alert">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="https://browsehappy.com/">обновите бразуер</a> для корректного отображения сайта.</p>
   <![endif]
@@ -77,25 +77,46 @@
         </div>
       </div>
     </div>
-    <h2 class="h2">Правила JavaSripts</h2>
+    <h2 class="h2">Команды babel</h2>
   </header>
   <!-- End header-->
-  <!-- rules-js-content-->
-  <main role="main" class="rules-js-content">
-    <section class="rules-js">
+  <!-- babel-content-->
+  <main role="main" class="babel-content">
+    <section class="babel"> 
       <div class="container"> 
-        <div class="rules-js__content"> 
-          <h4>Правила</h4>
-          <ul> 
-            <li>Использовать способ написания на языке ECMAScript 6 и выше, но для поддержки старых браузеров скомпилировать через Babel</li>
-            <li>в ES6 писать переменные через let </li>
-            <li>если писать переменные через const нельзя потом менять значение переменной</li>
-          </ul>
+        <div class="babel__content">
+          <h2> </h2>
+          <ol>
+            <li>Создать package.json в папке проекта - ввести: npm init -y</li>
+            <li>Установть babel - ввести: npm install babel-cli babel-core babel-preset-es2015 --save-dev</li>
+            <li>Создать рабочую папку - app/src
+              <ul> 
+                <li>Создать файл для написания js - scripts.js</li>
+              </ul>
+            </li>
+            <li>Создать папку выгрузки - dist </li>
+            <li>Создать рабочий файл - index.html </li>
+            <li>Открыть package.json 
+              <ul> 
+                <li>В обьекте "Scripts" удалить "test": "echo \"Error: no test specified\" && exit 1"</li>
+                <li>Вставить - "build": "babel src -d dist --presets es2015"</li>
+              </ul>
+            </li>
+            <li>В ком строке пишем - npm run build</li>
+            <li> <i>С помощью команды "run" можно запускать скрипты написанные в package.json</i></li>
+            <li>Написать скрипт слежения "watch" в обьекте "Scripts"
+              <ul>
+                <li>Добавить в "Scripts" - "watch": "babel src -d dist --presets es2015 -w"</li>
+                <li> <i>"-w" означает слежние за измениями в файле</i></li>
+                <li>Запустить команду "npm run watch" и работать</li>
+              </ul>
+            </li>
+          </ol>
         </div>
       </div>
     </section>
   </main>
-  <!-- End rules-js-content-->
+  <!-- End babel-content-->
   <!-- Cookie-->
   <div role="status" class="cookie">
     <div class="cookie__content">

@@ -1,0 +1,45 @@
+//- Шаблон
+extends ../../layout-jade/layout
+
+//- Переменные 
+block variables
+	- var title = 'Команды babel'
+	- var site = 'site.ru'
+	- var link = 'https://my-site.ru'
+	- var description = 'Описание страницы'
+	- var siteName = 'site name'
+	- var keywords = 'Кючевые слова'
+	- var body = 'is-babel'
+
+//- Контент
+block content-page
+	// babel-content
+	main(class="babel-content", role="main")
+		section.babel 
+			.container 
+				.babel__content
+					h2 
+					ol
+						li Создать package.json в папке проекта - ввести: npm init -y
+						li Установть babel - ввести: npm install babel-cli babel-core babel-preset-es2015 --save-dev
+						li Создать рабочую папку - app/src
+							ul 
+								li Создать файл для написания js - scripts.js
+						li Создать папку выгрузки - dist 
+						li Создать рабочий файл - index.html 
+						li Открыть package.json 
+							ul 
+								li В обьекте "Scripts" удалить "test": "echo \"Error: no test specified\" && exit 1"
+								li Вставить - "build": "babel src -d dist --presets es2015"
+						li В ком строке пишем - npm run build
+						li 
+							i С помощью команды "run" можно запускать скрипты написанные в package.json
+						li Написать скрипт слежения "watch" в обьекте "Scripts"
+							ul
+								li Добавить в "Scripts" - "watch": "babel src -d dist --presets es2015 -w"
+								li 
+									i "-w" означает слежние за измениями в файле
+								li Запустить команду "npm run watch" и работать
+						
+	// End babel-content
+
